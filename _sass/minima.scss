@@ -1,8 +1,10 @@
 @charset "utf-8";
 
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
 // Define defaults for each variable.
 
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+
+$base-font-family: "Roboto Mono", Helvetica, Arial, sans-serif !default;
 $base-font-size:   16px !default;
 $base-font-weight: 400 !default;
 $small-font-size:  $base-font-size * 0.875 !default;
@@ -24,6 +26,8 @@ $content-width:    800px !default;
 $on-palm:          600px !default;
 $on-laptop:        800px !default;
 
+
+
 // Use media queries like this:
 // @include media-query($on-palm) {
 //   .wrapper {
@@ -43,8 +47,9 @@ $on-laptop:        800px !default;
 
 // Import partials.
 @import
+  "neat/neat",
   "minima/base",
   "minima/layout",
   "minima/syntax-highlighting",
-  "neat/neat"
+  "minima/home"
 ;
