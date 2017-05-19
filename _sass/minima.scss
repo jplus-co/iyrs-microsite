@@ -26,6 +26,22 @@ $content-width:    800px !default;
 $on-palm:          600px !default;
 $on-laptop:        800px !default;
 
+//Typography
+$h1-size: 64px;
+$h1-weight: "Roboto Mono", Helvetica, Arial, sans-serif;
+$h1-family: 400;
+
+$h2-size: 48px;
+$h2-weight: "Roboto Mono", Helvetica, Arial, sans-serif;
+$h2-family: 800;
+
+$h3-size: 24px;
+$h3-weight: "Roboto Mono", Helvetica, Arial, sans-serif;
+$h3-family: 400;
+
+$phone: (
+    media: 768px
+);
 
 
 // Use media queries like this:
@@ -41,9 +57,17 @@ $on-laptop:        800px !default;
   }
 }
 
+
 @mixin relative-font-size($ratio) {
   font-size: $base-font-size * $ratio;
 }
+
+@mixin font-face($font-family, $weight, $size) {
+  font-family: $font-family;
+  font-weight: $weight;
+  font-size: $size;
+}
+
 
 // Import partials.
 @import

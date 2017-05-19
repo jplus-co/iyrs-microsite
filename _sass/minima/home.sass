@@ -1,6 +1,81 @@
 
-
 .hero
-  background-color: gray
-  height: 100px
+  background-image: linear-gradient(-225deg, #E9E7E7 0%, #F7F6F6 100%)
+  height: auto
   width: 100%
+  z-index: 0
+
+.hero__header-container
+  padding: 150px 0
+  z-index: 3
+  +grid-column(12)
+  @include grid-media($phone)
+    +grid-column(8)
+    +grid-shift(2)
+
+.dmf-logo
+  @include font-face($h3-family, 800, $h1-size)
+
+.hero-subtitle
+  @include font-face($h3-family, $h3-weight, $h3-size)
+
+.hero__background-text
+  @include font-face($h3-family, 800, 60px)
+  text-transform: uppercase
+  line-height: 120px
+  color: $grey-color-light
+  position: absolute
+  z-index: 1
+  bottom: 50px
+  +grid-column(6)
+  @include grid-media($phone)
+    @include font-face($h3-family, 800, 124px)
+    position: absolute
+    z-index: 1
+    +grid-column(6)
+    +grid-push(2)
+
+.speaker-callout
+  width: 100%
+  background-color: $grey-color-light
+  height: auto
+  padding: 20px 0
+
+.speaker-callout__text
+  +grid-column(12)
+  @include grid-media($phone)
+    +grid-column(6)
+    +grid-push(2)
+
+.speaker-callout__btn
+  background: white
+  border: 1px solid #000000
+  margin-top: 10px
+  padding: 10px 0
+  text-align: center
+  +grid-column(12)
+  @include grid-media($phone)
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    margin-top: 0
+    +grid-column(2)
+    +grid-push(0)
+
+
+
+.design
+.design__header
+  +font-face($h3-family, 800, 80px)
+  color: $grey-color-light
+  +grid-column(12)
+
+.design__subtitle
+  +font-face($h3-family, 800, 20px)
+  +grid-column(12)
+.design__subtitle > div
+  margin-bottom: 20px
+
+.design__description
+  +font-face($h3-family, 400, 16px)
+  +grid-column(12)
