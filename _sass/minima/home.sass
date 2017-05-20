@@ -6,10 +6,11 @@
   z-index: 0
 
 .hero__header-container
+  position: relative
   padding: 150px 0
   z-index: 3
   +grid-column(12)
-  @include grid-media($phone)
+  @include grid-media($desktop)
     +grid-column(8)
     +grid-shift(2)
 
@@ -22,14 +23,16 @@
 .hero__background-text
   @include font-face($h3-family, 800, 60px)
   text-transform: uppercase
-  line-height: 120px
+  line-height: 60px
   color: $grey-color-light
   position: absolute
   z-index: 1
-  bottom: 50px
+  top: 50%
+  transform: translateY(-50%)
   +grid-column(6)
-  @include grid-media($phone)
+  @include grid-media($desktop)
     @include font-face($h3-family, 800, 124px)
+    line-height: 120px
     position: absolute
     z-index: 1
     +grid-column(6)
@@ -43,39 +46,66 @@
 
 .speaker-callout__text
   +grid-column(12)
-  @include grid-media($phone)
+  @include grid-media($desktop)
     +grid-column(6)
     +grid-push(2)
 
-.speaker-callout__btn
+.btn
   background: white
   border: 1px solid #000000
   margin-top: 10px
   padding: 10px 0
   text-align: center
   +grid-column(12)
-  @include grid-media($phone)
-    position: absolute
-    top: 50%
-    transform: translateY(-50%)
-    margin-top: 0
-    +grid-column(2)
-    +grid-push(0)
+
+  @include grid-media($desktop)
+    &__speaker-callout
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      margin-top: 0
+      +grid-column(2)
+      +grid-push(0)
+    &__design
+      +grid-column(2)
 
 
+// Controls the general styles of the main sections
+.design,
+.build,
+.engage
+  &__header
+    +font-face($h3-family, 800, 80px)
+    color: $grey-color-light
+    +grid-column(12)
 
-.design
-.design__header
-  +font-face($h3-family, 800, 80px)
-  color: $grey-color-light
+  &__subtitle
+    +font-face($h3-family, 800, 20px)
+    +grid-column(12)
+    margin-top: -51px
+  &__subtitle > div
+    margin-bottom: 20px
+
+  &__description
+    +font-face($h3-family, 400, 16px)
+    +grid-column(12)
+
+  &__img
+    margin: 20px 0
+    +grid-column(8)
+    +grid-push(2)
+
+.build__img
+  overflow: visible
+  z-index: 10
+  position: relative
   +grid-column(12)
 
-.design__subtitle
-  +font-face($h3-family, 800, 20px)
-  +grid-column(12)
-.design__subtitle > div
-  margin-bottom: 20px
-
-.design__description
-  +font-face($h3-family, 400, 16px)
-  +grid-column(12)
+// No idea how I'm going to make this responsive.
+.build__color-block
+  width: 90%
+  position: absolute
+  right: 0
+  bottom: 80px
+  height: 20vw
+  background-color: $grey-color-light
