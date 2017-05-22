@@ -1,0 +1,4 @@
+rules:
+   property-sort-order: 0
+  # Mixins
+  mixins-before-declarations: 0

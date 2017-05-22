@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,700');
 // Define defaults for each variable.
 
 
@@ -28,21 +28,24 @@ $on-laptop:        800px !default;
 
 //Typography
 $h1-size: 64px;
-$h1-weight: "Roboto Mono", Helvetica, Arial, sans-serif;
-$h1-family: 400;
+$h1-family: "Roboto Mono", Helvetica, Arial, sans-serif;
+$h1-weight: 400;
 
 $h2-size: 48px;
-$h2-weight: "Roboto Mono", Helvetica, Arial, sans-serif;
-$h2-family: 800;
+$h2-family: "Roboto Mono", Helvetica, Arial, sans-serif;
+$h2-weight: 800;
 
 $h3-size: 24px;
-$h3-weight: "Roboto Mono", Helvetica, Arial, sans-serif;
-$h3-family: 400;
+$h3-family: "Roboto Mono", Helvetica, Arial, sans-serif;
+$h3-weight: 400;
 
 $desktop: (
     media: 768px
 );
 
+$tablet: (
+    media: 540px
+);
 
 // Use media queries like this:
 // @include media-query($on-palm) {
@@ -51,6 +54,7 @@ $desktop: (
 //     padding-left: $spacing-unit / 2;
 //   }
 // }
+
 @mixin media-query($device) {
   @media screen and (max-width: $device) {
     @content;
@@ -68,6 +72,12 @@ $desktop: (
   font-size: $size;
 }
 
+@mixin media-query-inbetween($max, $min) {
+  @media screen and (max-width: $max) and (min-width: $min) {
+    @content;
+  }
+}
+
 
 // Import partials.
 @import
@@ -75,5 +85,6 @@ $desktop: (
   "minima/base",
   "minima/layout",
   "minima/syntax-highlighting",
-  "minima/home"
+  "minima/home",
+  "minima/page"
 ;
