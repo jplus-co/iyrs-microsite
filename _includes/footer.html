@@ -55,7 +55,7 @@ var all = function all(selectors) {
 };
 
 var nav = select('nav');
-var links = Array.prototype.slice.call(all('nav > .trigger'));
+var links = Array.prototype.slice.call(all('.nav__page-link'));
 var bounds = nav.getBoundingClientRect();
 var line = select('nav .line');
 var transforms = links.map(function (el) {
@@ -79,12 +79,12 @@ var onMouseOver = function onMouseOver(evt) {
 };
 
 var toCurrent = function toCurrent(evt) {
-	var index = links.indexOf(select('nav a[aria-current="page"]'));
+	var index = links.indexOf(select('[aria-current="page"]'));
 	line.style.transform = transform(index);
 };
 
 var setActive = function setActive(evt) {
-	select('nav a[aria-current="page"]').removeAttribute('aria-current');
+	select('[aria-current="page"]').removeAttribute('aria-current');
 	evt.currentTarget.setAttribute('aria-current', 'page');
 };
 

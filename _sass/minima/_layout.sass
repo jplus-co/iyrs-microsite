@@ -33,10 +33,14 @@
 
 $ease-out-quint: cubic-bezier(0.23, 1, 0.32, 1)
 
+header
+  display: flex
+  justify-content: space-between
+  align-items: center
 
 .nav
-  float: right
   line-height: $base-line-height * $base-font-size * 2.25
+  position: relative
 
   .line
     position: absolute
@@ -50,7 +54,7 @@ $ease-out-quint: cubic-bezier(0.23, 1, 0.32, 1)
     transform: translateX(-100%)
     transition: transform 0.8s $ease-out-quint
     will-change: transform
-    
+
   .nav__trigger
     display: none
 
