@@ -12,6 +12,7 @@ $base-line-height: 1.5 !default;
 
 $spacing-unit:     30px !default;
 
+// Colors
 $text-color:       #111 !default;
 $background-color: #fdfdfd !default;
 $brand-color:      #2a7ae2 !default;
@@ -19,6 +20,8 @@ $brand-color:      #2a7ae2 !default;
 $grey-color:       #828282 !default;
 $grey-color-light: lighten($grey-color, 40%) !default;
 $grey-color-dark:  darken($grey-color, 25%) !default;
+
+$hero-bg-gradient: linear-gradient(-134deg, #EBF0F0 0%, #C0C8DA 100%);
 
 // Width of the content area
 $content-width:    800px !default;
@@ -86,5 +89,6 @@ $tablet: (
   "minima/layout",
   "minima/syntax-highlighting",
   "minima/home",
-  "minima/page"
+  "minima/page",
+  "minima/summer-speakers"
 ;

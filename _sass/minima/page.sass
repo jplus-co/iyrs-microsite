@@ -1,1 +1,14 @@
-.page-title
+.page-hero
+  width: 100%
+  background-image: $hero-bg-gradient
+
+.page-hero__title-container
+  padding: 120px 0
+
+.page-hero__title
+  +grid-container(6)
+  +font-face($h2-family, $h2-weight, $h2-size)
+
+.page-hero__subtitle
+  +grid-container(6)
+  +font-face($h3-family, $h3-weight, $h3-size)
