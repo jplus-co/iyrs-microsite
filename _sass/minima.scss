@@ -1,6 +1,7 @@
 @charset "utf-8";
 
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,500i,700');
+
 // Define defaults for each variable.
 
 
@@ -20,6 +21,16 @@ $brand-color:      #2a7ae2 !default;
 $grey-color:       #828282 !default;
 $grey-color-light: lighten($grey-color, 40%) !default;
 $grey-color-dark:  darken($grey-color, 25%) !default;
+
+
+$light-gray: #EBF0F0;
+$pale-blue-gray: #C0C8DA;
+$dark-blue-gray: #61718C;
+$dark-navy: #272B3F;
+$orange: #FF6868;
+$yellow: #FFDE68;
+$cyan: #84E3DD;
+
 
 $hero-bg-gradient: linear-gradient(-134deg, #EBF0F0 0%, #C0C8DA 100%);
 
@@ -41,6 +52,15 @@ $h2-weight: 800;
 $h3-size: 24px;
 $h3-family: "Roboto Mono", Helvetica, Arial, sans-serif;
 $h3-weight: 400;
+
+
+$light: 300;
+$regular: 400;
+$medium: 500;
+$bold: 700;
+
+$neuziet: "neuzeit-grotesk", Helvetica, Arial, sans-serif;
+$roboto-mono: "Roboto Mono", Helvetica, Arial, sans-serif;
 
 $desktop: (
     media: 768px

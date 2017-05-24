@@ -78,6 +78,64 @@
     display: block
     clear: both
 
+.enroll-callout
+  +font-face($roboto-mono, $bold, 20px)
+  text-align: center
+  margin: 20px
+  color: $dark-blue-gray
+  +grid-media($desktop)
+    margin: 80px 0 40px 0
+
+.enroll-info
+  border: 1px dashed #272B3F
+  padding: 20px 20px 10px 20px
+  margin: 0 20px
+  +grid-media($desktop)
+    padding: 40px 40px 10px 40px
+    margin: 0 auto
+    max-width: 850px
+
+.enroll-info__numbers
+  +grid-column(10)
+  +grid-push(1)
+  +grid-media($desktop)
+    +grid-column(4)
+  ul
+    list-style: none
+    margin-bottom: 40px
+    margin-left: 0
+    +grid-media($desktop)
+  li
+    margin-bottom: 20px
+    +grid-media($desktop)
+      margin-bottom: 30px
+  .enroll-number
+    background-color: $light-gray
+    padding: 5px
+    margin-right: 8px
+  span
+    padding-left: 37px
+    display: inline-block
+
+.enroll-info__enroll-now
+  +grid-column(12)
+  margin-left: 20px
+  +grid-media($desktop)
+    +grid-column(5)
+    +grid-push(2)
+  & > span
+    +font-face($neuziet, $regular, 24px)
+    background-color: $pale-blue-gray
+    color: white
+    padding: 10px
+  & > div
+    +font-face($roboto-mono, $medium, 16px)
+    font-style: italic
+    color: $dark-blue-gray
+    margin-top: 20px
+    +grid-media($desktop)
+      margin-top: 40px
+
 .flex
   display: flex
   flex-direction: column
