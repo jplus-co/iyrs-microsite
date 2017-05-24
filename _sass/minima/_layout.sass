@@ -31,11 +31,26 @@
   &:visited
     color: $grey-color-dark
 
+$ease-out-quint: cubic-bezier(0.23, 1, 0.32, 1)
+
 
 .nav
   float: right
   line-height: $base-line-height * $base-font-size * 2.25
 
+  .line
+    position: absolute
+    width: 100%
+    height: 3px
+    left: 0
+    right: 0
+    bottom: 0
+    background-color: #ff5555
+    transform-origin: left
+    transform: translateX(-100%)
+    transition: transform 0.8s $ease-out-quint
+    will-change: transform
+    
   .nav__trigger
     display: none
 
@@ -46,7 +61,7 @@
     color: $text-color
     line-height: $base-line-height
     font-size: $base-font-size - 2px
-    transition: color .2s ease-in-out
+    transition: color 0.4s $ease-out-quint
     // Gaps between nav items, but not on the last one
     &:not(:last-child)
       margin-right: 20px
@@ -56,6 +71,8 @@
       transition: color .2s ease-in-out
       color: red
 
+    &[aria-current="page"]
+      color: #ff5555
 
   @include media-query($on-palm)
     position: absolute
@@ -101,6 +118,7 @@
       &:not(:last-child)
         margin-right: 0
         margin-left: 20px
+
 
 
 //Site footer
