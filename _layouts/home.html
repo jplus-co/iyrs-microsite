@@ -16,7 +16,7 @@ located in Newport, Rhode Island.</div>
 <div class="speaker-callout">
   <div class="grid-container">
     <div class="speaker-callout__text"> Join us this summer for our free summer speaker series & workshops. </div>
-    <a href="summer-speakers/" class="btn btn__speaker-callout">Learn More</a>
+    <a href="speaker-series/" class="btn btn__speaker-callout">Learn More</a>
   </div>
 </div>
 
@@ -45,7 +45,7 @@ located in Newport, Rhode Island.</div>
       <div class="">CNC Machining</div>
       <div class="">Addative Manufacturing</div>
   </div>
-    <a href="curriculum" class="btn btn__design">View Curriculum</a>
+    <a href="curriculum/" class="btn btn__design">View Curriculum</a>
     <img class="design__img" src="img/product_development_cycle@2x.png"/>
 </div>
 </section>
@@ -53,14 +53,14 @@ located in Newport, Rhode Island.</div>
 <section class="build">
   <div class="grid-container flex">
     <div class="build__header">Build</div>
-    <div class="build__description">Make anything possible with with the additive and subtractive materials necessary for contemporary 3d design in our state-of-the-art Build Studio. </div>
+    <div class="build__description">Make anything possible with the additive and subtractive materials necessary for contemporary 3d design in our state-of-the-art Build Studio. </div>
     <div class="build__subtitle">
       <div class="">3D Printing</div>
       <div class="">Laser Cutting</div>
       <div class="">Vacuum Forming</div>
       <div class="">Physical Computing</div>
     </div>
-    <a href="curriculum" class="btn btn__build">Our Build Studio</a>
+    <a href="studio/" class="btn btn__build">Our Build Studio</a>
     <img class="build__img" src="img/materials-mockup.png"/>
     <!-- <div class="build__color-block"></div> -->
 </div>
@@ -76,13 +76,32 @@ located in Newport, Rhode Island.</div>
       <div class="">Testing</div>
       <div class="">Analyzing</div>
     </div>
-    <a href="curriculum" class="btn btn__engage">Careers</a>
+    <a href="careers/" class="btn btn__engage">Careers</a>
     <div class="engage__img-container">
       <img class="engage__img" src="http://placehold.it/470x285">
       <img class="engage__img" src="http://placehold.it/470x285">
       <span id="element--circle"></span>
     </div>
 </div>
+</section>
+
+<section class="speaker-series">
+  <div class="grid-container">
+    <div class="speaker-series__title-container">
+      <div class="speaker-series__title">Summer Speakers Series</div>
+      <div class="speaker-series__subtitle">Join us this summer as we explore various topics on 3D technology, business, and contemporary practices in the realm of design & fabrication. </div>
+      <div class="btn__speaker-series"><a href="summer-speakers/">Speaker Schedule</a></div>
+    </div>
+
+    <div class="speaker-series__speaker-container">
+      {% for post in site.categories.speakers %}
+      <div class="speaker-series__speaker">
+        <img src="{{ post.speaker-img }}"/>
+        <div class="speaker-name">{{ post.title }}</div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
 </section>
 
 <section class="cta">

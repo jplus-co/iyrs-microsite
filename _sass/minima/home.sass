@@ -64,9 +64,21 @@
     transform: translateY(-50%)
     margin-top: 0
 
+.btn__speaker-series
+  +grid-column(12)
+  @extend .btn
+  order: 4
+  +grid-media($tablet)
+    +grid-column(6)
+  +grid-media($desktop)
+    +grid-column(7)
+    margin-left: 0px
+    display: block
+    clear: both
+
 .btn__design,
 .btn__build,
-.btn__engage
+.btn__engage,
   +grid-column(12)
   @extend .btn
   order: 4
@@ -245,6 +257,11 @@
   height: 20vw
   background-color: $grey-color-light
 
+.engage
+  margin-bottom: 100px
+  +grid-media($desktop)
+    margin-bottom: 100px
+
 .engage__img-container
   position: relative
   max-width: 960px
@@ -287,8 +304,62 @@
     top: 50%
     left: 50%
 
+.speaker-series
+  background-image: $hero-bg-gradient
+  width: 95%
+  margin: 0 auto
+
+.speaker-series__title-container
+  +grid-column(12)
+  padding: 60px 0
+  +grid-media($desktop)
+    +grid-column(6)
+    padding: 80px 0
+
+.speaker-series__title
+  +font-face($h2-size, $h2-weight, $h2-size)
+
+.summer-speaker__subtitle
+  +font-face($h3-family, $h3-weight, $h3-size)
+
+.speaker-series__speaker-container
+  display: none
+  +grid-media($desktop)
+    +grid-column(6)
+    display: block
+    position: absolute
+    right: 0
+    top: 50%
+    transform: translateY(-50%)
+
+.speaker-series__speaker
+  display: none
+  +grid-media($desktop)
+    position: absolute
+    display: block
+
+.speaker-series__speaker:nth-child(1)
+  bottom: 0
+  margin-bottom: 50px
+.speaker-series__speaker:nth-child(2)
+  right: 25px
+  top: 50%
+  transform: translateY(-50%)
+.speaker-series__speaker:nth-child(3)
+  top: 0
+  margin-top: 50px
+
+.speaker-name
+  display: none
+  +grid-media($desktop)
+    display: block
+    position: absolute
+    bottom: 10px
+    right: -50px
+
+
 .cta
-  margin: 100px 0
+  margin: 200px 0 100px 0
 
 .cta__container
   +grid-column(12)
