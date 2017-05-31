@@ -64,6 +64,16 @@ $bold: 700;
 $neuziet: "neuzeit-grotesk", Helvetica, Arial, sans-serif;
 $roboto-mono: "Roboto Mono", Helvetica, Arial, sans-serif;
 
+.sub-header-1{
+  font-family: $neuziet;
+  font-weight: $bold;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: $dark-navy;
+  letter-spacing: 3px
+}
+
+
 $desktop: (
     media: 768px
 );
@@ -72,13 +82,7 @@ $tablet: (
     media: 540px
 );
 
-// Use media queries like this:
-// @include media-query($on-palm) {
-//   .wrapper {
-//     padding-right: $spacing-unit / 2;
-//     padding-left: $spacing-unit / 2;
-//   }
-// }
+
 
 @mixin media-query($device) {
   @media screen and (max-width: $device) {

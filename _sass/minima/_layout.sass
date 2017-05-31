@@ -8,6 +8,13 @@
   margin: 0 auto
   position: relative
 
+// Flex is used primarily to reorganize elements on mobile
+.flex
+  display: flex
+  flex-direction: column
+  @include grid-media($desktop)
+    display: block
+
 
 // Main button style
 .btn
@@ -199,7 +206,7 @@ header
 
 //Page content
 .page-content
-  padding: $spacing-unit 0
+  position: relative
 
 .page-heading
   @include relative-font-size(1.25)

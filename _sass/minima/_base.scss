@@ -74,10 +74,10 @@ figcaption {
 
 
 /**
- * Lists
+ * Reset Lists
  */
 ul, ol {
-  margin-left: $spacing-unit;
+  margin-left: 0;
 }
 
 li {
@@ -111,7 +111,8 @@ a {
 
   &:hover {
     color: $text-color;
-    text-decoration: underline;
+    text-decoration: none;
+    cursor: pointer;
   }
 
   .social-media-list &:hover {
