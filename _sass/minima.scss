@@ -4,6 +4,8 @@
 
 // Define defaults for each variable.
 
+$ease-out-quint: cubic-bezier(0.23, 1, 0.32, 1);
+
 
 $base-font-family: "Roboto Mono", Helvetica, Arial, sans-serif !default;
 $base-font-size:   16px !default;
@@ -37,7 +39,7 @@ $hero-bg-gradient: linear-gradient(-134deg, #EBF0F0 0%, #C0C8DA 100%);
 // Width of the content area
 $content-width:    800px !default;
 
-$on-palm:          600px !default;
+$on-palm:          768px !default;
 $on-laptop:        800px !default;
 
 //Typography
@@ -110,5 +112,6 @@ $tablet: (
   "minima/syntax-highlighting",
   "minima/home",
   "minima/page",
-  "minima/summer-speakers"
+  "minima/summer-speakers",
+  "minima/curriculum"
 ;

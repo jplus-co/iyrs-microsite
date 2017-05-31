@@ -9,15 +9,27 @@
   position: relative
 
 
+// Main button style
+.btn
+  background: $orange
+  margin-top: 10px
+  padding: 10px 0
+  text-align: center
+  color: white
+  background: linear-gradient(to right, #ff5555 50%, $orange 50%)
+  background-size: 200% 100%
+  background-position: right bottom
+  transition: background 1.5s $ease-out-quint
+  cursor: pointer
+  a
+    color: white
+
 // Site header
 .site-header
-  // border-top: 5px solid $grey-color-dark
-  // border-bottom: 1px solid $grey-color-light
-  min-height: $spacing-unit * 1.865
+  min-height: 54px
   padding: 0 40px
   // Positioning context for the mobile navigation icon
   position: relative
-
 
 .site-title
   @include relative-font-size(1.625)
@@ -31,7 +43,6 @@
   &:visited
     color: $grey-color-dark
 
-$ease-out-quint: cubic-bezier(0.23, 1, 0.32, 1)
 
 header
   display: flex
@@ -42,6 +53,7 @@ header
   line-height: $base-line-height * $base-font-size * 2.25
   position: relative
   overflow: hidden
+  z-index: 100
 
   .line
     position: absolute
@@ -124,7 +136,11 @@ header
         margin-right: 0
         margin-left: 20px
 
-
+.btn__nav-apply
+  padding: 0
+  +grid-media($desktop)
+    display: inline
+    padding: 7px 30px
 
 //Site footer
 

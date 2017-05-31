@@ -1,14 +1,46 @@
 .page-hero
   width: 100%
-  background-image: $hero-bg-gradient
+  position: relative
+  height: 320px
+  background: url(../img/hero-bg-img@2x.png) center center no-repeat
+  background-size: cover
 
 .page-hero__title-container
-  padding: 120px 0
+  padding: 120px 20px
+  +grid-media($desktop)
+    padding: 120px 0
 
 .page-hero__title
-  +grid-container(6)
-  +font-face($h2-family, $h2-weight, $h2-size)
+  +grid-container(12)
+  +font-face($neuziet, $h2-weight, $h2-size)
+  text-transform: uppercase
+  color: #272B3F
+  letter-spacing: 6px
+  text-align: center
 
 .page-hero__subtitle
-  +grid-container(6)
-  +font-face($h3-family, $h3-weight, $h3-size)
+  +grid-container(12)
+  +font-face($h3-family, $h3-weight, 20px)
+  text-align: center
+
+.page-hero__gradient
+  background-image: $hero-bg-gradient
+  height: 100%
+
+
+// .page-hero__img
+//   width: 100%
+//   height: 500px
+//   background: url(../img/img__header-bg.png) center center no-repeat
+//   background-size: cover
+//   position: relative
+//
+//   &:before
+//     content: ''
+//     position: absolute
+//     top: 0
+//     right: 0
+//     bottom: 0
+//     left: 0
+//     background-image: $hero-bg-gradient
+//     opacity: .6
