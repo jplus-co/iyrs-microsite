@@ -7,21 +7,9 @@ subtitle: Explore the possibilities of the DM&F curriculum
 ---
 <section class="curriculum-page">
   <div class="grid-container flex">
-      <div class="page__intro-text">Do you love building, creating and designing? Whether it be creatively or programatically, the Digital Modeling & Fabrication program at IYRS will prepare you for a career in physical design and a lifetime of making.</div>
+      <div class="page__intro-text">Do you love building, creating and designing? Whether it be artistically or pragmatically, the Digital Modeling & Fabrication program at IYRS will prepare you for a career in physical design and a lifetime of making.</div>
 
-      <div class="sidebar-contact">
-          <div class="btn">
-              <a href=""></a>Apply Online</div>
-          <div class="btn">
-              <a href=""></a>Schedule a Visit</div>
-          <span>Questions?</span>
-          <span>Get in touch</span>
-          <div><b>Nora Meah</b><br/> Director of Admissions<br/> Ext. 220</div>
-          <div>
-              Main phone<br/>
-              <b>(401) 848-5777</b>
-          </div>
-      </div>
+      {% include sidebar-contact.html %}
 
       <div class="curriculum">
           <div class="curriculum__container">
@@ -93,12 +81,26 @@ subtitle: Explore the possibilities of the DM&F curriculum
       </div>
       <!-- curriculum -->
 
-      <div class="ext-cap">
-          <div class="sub-header-1">externship</div>
+      <div class="program-info">
+          <div class="sub-header-1">key dates</div>
+            <ul class="key-dates">
+              <li><b>Classes begin: </b>September 5</li>
+              <li><b>Session Term: </b>September 5, 2017 - May 18, 2018</li>
+              <li><b>Winter Vacation: </b>December 23, 2017 - January 5, 2018</li>
+              <li><b>Externship: </b>April 23, 2018 - May 18, 2018</li>
+              <li><b>Graduation: </b>June 2, 2018</li>
+
+              <div class="key-dates__admissions">
+                <div><b>Note: </b>IYRS <i>does not have a set deadline</i> for applications to be considered for spring or fall enrollment. Our admissions committee reviews applications on a rolling basis as they are completed and submitted.</div>
+                <div class="key-dates__application-process">Learn more about our <a href="http://iyrs.edu/application-process/admissions-schedule/">admissions process</a>.</div>
+              </div>
+            </ul>
+
+          <div id="externship" class="sub-header-1">externship</div>
           <p>The objectives of the course are to equip students to be proficient (to industry standard) in SolidWorks. Students will learn the SolidWorks interface, tool-set use and best practices. Students will learn the characteristics of the various file
               formats in which 3D designs may be saved and will utilize a wide range of straightforward and “light-lift”</p>
 
-          <div class="sub-header-1">capstone</div>
+          <div id="capstone" class="sub-header-1">capstone</div>
           <p>The objectives of the course are to equip students to be proficient (to industry standard) in SolidWorks. Students will learn the SolidWorks interface, tool-set use and best practices. Students will learn the characteristics of the various file
               formats in which 3D designs may be saved and will utilize a wide range of straightforward and “light-lift”</p>
       </div>

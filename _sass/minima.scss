@@ -67,7 +67,7 @@ $roboto-mono: "Roboto Mono", Helvetica, Arial, sans-serif;
 .sub-header-1{
   font-family: $neuziet;
   font-weight: $bold;
-  font-size: 20px;
+  font-size: 24px;
   text-transform: uppercase;
   color: $dark-navy;
   letter-spacing: 3px
@@ -117,5 +117,7 @@ $tablet: (
   "minima/home",
   "minima/page",
   "minima/summer-speakers",
-  "minima/curriculum"
+  "minima/curriculum",
+  "minima/careers",
+  "minima/studio"
 ;
