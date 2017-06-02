@@ -20,7 +20,7 @@
 .btn
   background: $orange
   margin-top: 10px
-  padding: 10px 0
+  padding: 6px 0
   text-align: center
   color: white
   background: linear-gradient(to right, #ff5555 50%, $orange 50%)
@@ -30,7 +30,15 @@
   cursor: pointer
   a
     color: white
-
+.btn:hover
+  background-position: left bottom
+  a
+    text-decoration: none
+    color: white
+  a:visited
+    color: white
+  a:hover
+    text-decoration: none
 
 .sidebar-contact
   +grid-column(12)
@@ -75,7 +83,7 @@
 
 .page__intro-subtext
   +grid-column(12)
-  padding: 15px 0  
+  padding: 15px 0
   order: 2
   +grid-media($desktop)
     +grid-column(7)
@@ -204,55 +212,28 @@ header
 .site-footer
   border-top: 1px solid $grey-color-light
   padding: $spacing-unit 0
+  background-color: $light-gray
 
-.footer-heading
-  @include relative-font-size(1.125)
-  margin-bottom: $spacing-unit / 2
+.footer__header
+  +grid-column(12)
+  text-align: center
+  +grid-media($desktop)
+    +grid-column(12)
 
-.contact-list,
-.social-media-list
-  list-style: none
-  margin-left: 0
+.footer__form
 
-.footer-col-wrapper
-  @include relative-font-size(0.9375)
-  color: $grey-color
-  margin-left: -$spacing-unit / 2
-  @extend %clearfix
+.footer__nav
+  +grid-media($desktop)
+    +grid-column(8)
+    +grid-push(2)
+    text-align: center
+  ul
+    list-style: none
+  ul li
+    float: right
+    margin-right: 20px
 
-.footer-col
-  float: left
-  margin-bottom: $spacing-unit / 2
-  padding-left: $spacing-unit / 2
-
-.footer-col-1
-  width: -webkit-calc(35% - (#$spacing-unit / 2))
-  width:         calc(35% - (#$spacing-unit / 2))
-
-.footer-col-2
-  width: -webkit-calc(20% - (#$spacing-unit / 2))
-  width:         calc(20% - (#$spacing-unit / 2))
-
-.footer-col-3
-  width: -webkit-calc(45% - (#$spacing-unit / 2))
-  width:         calc(45% - (#$spacing-unit / 2))
-
-@include media-query($on-laptop)
-  .footer-col-1,
-  .footer-col-2
-    width: -webkit-calc(50% - (#$spacing-unit / 2))
-    width:         calc(50% - (#$spacing-unit / 2))
-
-  .footer-col-3
-    width: -webkit-calc(100% - (#$spacing-unit / 2))
-    width:         calc(100% - (#$spacing-unit / 2))
-
-
-@include media-query($on-palm)
-  .footer-col
-    float: none
-    width: -webkit-calc(100% - (#$spacing-unit / 2))
-    width:         calc(100% - (#$spacing-unit / 2))
+.footer__iyrs-logo
 
 //Page content
 .page-content

@@ -1,5 +1,5 @@
 .hero
-  background-image: $hero-bg-gradient
+  // background-image: $hero-bg-gradient
   height: auto
   width: 100%
   z-index: 0
@@ -35,27 +35,28 @@
     line-height: 120px
     z-index: 1
 
+.hero-video
+  position: absolute
+  height: 100%
+  width: 100%
+  z-index: 0
+.hero-video__container::after
+  content: ""
+  background-color: white
+  height: 200px
+  width: 100%
+
 .speaker-callout
   width: 100%
-  background-color: $grey-color-light
+  background-color: $dark-navy
   height: auto
   padding: 20px 0
 
 .speaker-callout__text
   +grid-column(12)
+  color: white
   +grid-media($desktop)
     +grid-column(9)
-
-
-.btn:hover
-  background-position: left bottom
-  a
-    text-decoration: none
-    color: white
-  a:visited
-    color: white
-  a:hover
-    text-decoration: none
 
 .btn__speaker-callout
   +grid-column(12)
@@ -98,40 +99,76 @@
   +font-face($roboto-mono, $bold, 20px)
   text-align: center
   margin: 20px
-  color: $dark-blue-gray
+  color: $dark-navy
   +grid-media($desktop)
     margin: 80px 0 40px 0
 
 .enroll-info
-  border: 1px dashed #272B3F
-  padding: 20px 20px 10px 20px
+  padding: 30px 20px 30px 20px
   margin: 0 20px
+  background-color: $dark-navy
+  color: white
   +grid-media($desktop)
     padding: 40px 40px 10px 40px
     margin: 0 auto
-    max-width: 850px
 
 .enroll-info__numbers
+  color: white
   +grid-column(10)
-  +grid-push(1)
   +grid-media($desktop)
-    +grid-column(4)
+    +grid-column(5)
   ul
     list-style: none
     margin-bottom: 40px
     margin-left: 0
     +grid-media($desktop)
   li
+    font-size: 16px
     margin-bottom: 20px
     +grid-media($desktop)
       margin-bottom: 30px
+      font-size: 24px
+
   .enroll-number
-    background-color: $light-gray
-    padding: 5px
-    margin-right: 8px
-  span
-    padding-left: 37px
+    position: relative
+    padding: 5px 8px
+    margin-right: 16px
+    color: $dark-navy
+    z-index: 0
+  .enroll-number::after
+    content: ""
+    position: absolute
+    border: 2px white solid
+    height: 35px
+    width: 35px
+    transform: translate(-25px, -7px)
+    +grid-media($desktop)
+      height: 45px
+      width: 45px
+      transform: translate(-34px, -8px)
+  .enroll-number::before
+    content: ""
+    position: absolute
+    background-color: $yellow
+    height: 35px
+    width: 35px
+    z-index: -1
+    transform: translate(-11px, -2px)
+    +grid-media($desktop)
+      height: 45px
+      width: 45px
+      z-index: -1
+      transform: translate(-12px, -2px)
+
+  div
+    // This div controls the
+    // "Externship or capstone project" text
+    padding-left: 51px
     display: inline-block
+    +grid-media($tablet)
+      padding-left: 0
+    +grid-media($desktop)
+      padding-left: 60px
 
 .enroll-info__enroll-now
   +grid-column(12)
@@ -140,14 +177,19 @@
     +grid-column(5)
     +grid-push(2)
   & > span
-    +font-face($neuziet, $regular, 24px)
-    background-color: $pale-blue-gray
-    color: white
+    +font-face($neuziet, $bold, 18px)
+    background-color: $yellow
+    color: $dark-navy
     padding: 10px
-  & > div
+    letter-spacing: 2.4px
+    +grid-media($desktop)
+      font-size: 24px
+  & > span > span
+    margin-left: 10px
+  & > div:first-of-type
     +font-face($roboto-mono, $medium, 16px)
     font-style: italic
-    color: $dark-blue-gray
+    color: white
     margin-top: 20px
     +grid-media($desktop)
       margin-top: 40px
@@ -163,39 +205,48 @@
 
   &__header
     +grid-column(12)
-    +font-face($h3-family, 800, 80px)
-    color: $grey-color-light
+    +font-face($neuziet, 800, 80px)
+    text-transform: uppercase
+    letter-spacing: 6px
+    color: $dark-navy
     order: 1
+    line-height: 70px
+    margin-bottom: 20px
     +grid-media($desktop)
       +grid-column(5)
-      +font-face($h3-family, 800, 144px)
-      line-height: 55px
+      font-size: 100px
+      margin-bottom: 0
+      margin-top: 23px
 
   &__subtitle
     +grid-column(12)
     +font-face($h3-family, 800, 20px)
-    margin-top: -51px
     order: 2
     +grid-media($desktop)
-      +grid-column(6)
-      +grid-push(1)
+      +grid-column(8)
       +font-face($h3-family, 800, 28px)
       margin-top: 0px
       padding-top: 50px
 
   &__subtitle > div
     margin-bottom: 20px
+    color: $dark-navy
     +grid-media($desktop)
-      margin-bottom: 40px
+      margin-bottom: 20px
+
+  &__subtitle > div > span
+    color: $cyan
+    padding-right: 10px
+    +grid-media($desktop)
+      padding-right: 40px
 
   &__description
     +grid-column(12)
     +font-face($h3-family, 400, 16px)
     order: 3
     +grid-media($desktop)
-      +grid-column(4)
-      +font-face($h3-family, 400, 14px)
-      +grid-push(3)
+      +grid-column(5)
+      +grid-push(2)
 
   &__img
     +grid-column(12)
@@ -205,57 +256,66 @@
     position: relative
     +grid-media($desktop)
 
+
+// Specific styles for the design section
 .design
   margin-bottom: 200px
+
+.design__header
+  +grid-media($desktop)
+    position: absolute
+    transform: translate(1px, -77px)
+    line-height: 90px
+    margin-top: 0
+
+.design__subtitle
+  +grid-media($desktop)
+    padding-top: 70px
+
+.design__description
+  +grid-media($desktop)
+    +grid-push(7)
 
 .design__img
   +grid-column(10)
   +grid-push(1)
   margin-top: 20px
   +grid-media($desktop)
-    +grid-column(5)
+    +grid-column(6)
     +grid-push(7)
     position: absolute
     right: 20px
-    top: 110px
+    top: 170px
 
-// Build section needs more specific styles
-// because it is offset
-.build__header
-  +grid-media($desktop)
-    +grid-shift(6)
-    line-height: 84px
-    +media-query-inbetween(870px, 768px)
-      +grid-shift(5)
+// Specific styles for the build section
+// .build__header
+//   +grid-media($desktop)
+//     +grid-shift(6)
+//     line-height: 84px
+//     +media-query-inbetween(870px, 768px)
+//       +grid-shift(5)
+//
+// .build__subtitle
+//   +grid-media($desktop)
+//
+// .build__description
+//   +grid-media($desktop)
+//     +grid-push(-5)
+//
+// .build__img
+//   overflow: visible
+//   margin-top: 20px
+//   z-index: 10
+//   +grid-media($desktop)
+//     +grid-column(8)
+//     +grid-shift(5)
+//     position: absolute
+//     margin-top: 0
+//     right: 0
+//     top: 80px
 
-.build__subtitle
-  +grid-media($desktop)
 
-.build__description
-  +grid-media($desktop)
-    +grid-push(3)
-    +grid-shift(-7)
-
-.build__img
-  overflow: visible
-  margin-top: 20px
-  z-index: 10
-  +grid-media($desktop)
-    +grid-column(8)
-    +grid-shift(5)
-    position: absolute
-    margin-top: 0
-    right: 0
-    top: 80px
-
-.build__color-block
-  width: 90%
-  position: absolute
-  right: 0
-  bottom: 80px
-  height: 20vw
-  background-color: $grey-color-light
-
+// Specific styles for the engage section
 .engage
   margin-bottom: 100px
   +grid-media($desktop)
@@ -303,6 +363,8 @@
     top: 50%
     left: 50%
 
+
+// Specific styles for the speaker series section
 .speaker-series
   background-image: $hero-bg-gradient
   width: 95%

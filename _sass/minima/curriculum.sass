@@ -63,8 +63,8 @@
 
 
 .curriculum__dot-bg
+  height: 390px
   content: ""
-  height: 450px
   width: 100%
   position: absolute
   bottom: 0
@@ -73,3 +73,5 @@
   background-size: contain
   background-repeat: repeat-x
   display: inline-block
+  +grid-media($desktop)
+    height: 450px
