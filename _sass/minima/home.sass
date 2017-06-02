@@ -69,18 +69,6 @@
     transform: translateY(-50%)
     margin-top: 0
 
-.btn__speaker-series
-  +grid-column(12)
-  @extend .btn
-  order: 4
-  +grid-media($tablet)
-    +grid-column(6)
-  +grid-media($desktop)
-    +grid-column(7)
-    margin-left: 0px
-    display: block
-    clear: both
-
 .btn__design,
 .btn__build,
 .btn__engage,
@@ -205,7 +193,7 @@
 
   &__header
     +grid-column(12)
-    +font-face($neuziet, 800, 80px)
+    +font-face($h1-family, 800, 80px)
     text-transform: uppercase
     letter-spacing: 6px
     color: $dark-navy
@@ -318,6 +306,7 @@
 // Specific styles for the engage section
 .engage
   margin-bottom: 100px
+  position: relative
   +grid-media($desktop)
     margin-bottom: 100px
 
@@ -329,44 +318,65 @@
   z-index: -1
   order: 5
   +grid-media($desktop)
-    height: 590px
+    height: 850px
 
 .engage__img
   +grid-column(12)
-  z-index: -1
+  z-index: 0
   +grid-media($desktop)
     +grid-column(6)
     position: absolute
 
   &:nth-of-type(1)
     margin-bottom: 20px
+    z-index: 1
     +grid-media($desktop)
+      +grid-push(5)
       top: 180px
       left: 0
+    +media-query-inbetween(912px, 768px)
+      top: 200px
 
   &:nth-of-type(2)
+    z-index: 1
     +grid-media($desktop)
-      +grid-push(6)
-      top: 130px
+      +grid-push(7)
+      top: 500px
       left: 0
+    +media-query-inbetween(1080px, 768px)
+      +grid-push(6)
 
-#element--circle
+.engage__img::before
+  content: ""
   position: absolute
-  height: 80px
-  width: 80px
-  border-radius: 50%
-  transform: translate(-50%, -50%)
-  top: 50%
-  left: 50%
-  background-color: $grey-color-light
+  width: 100%
+  height: 100%
+  transform: translate(4%, 6%)
+  border: 4px $yellow solid
+  +media-query-inbetween(767px, 474px)
+    width: 419px
+    height: 279px
   +grid-media($desktop)
-    top: 50%
-    left: 50%
+    width: 93%
+
+
+.engage__dot-bg
+  position: absolute
+  right: 0
+  bottom: 0
+  z-index: -2
+  width: 436px
+  height: 331px
+  +grid-media($desktop)
+    right: 0px
+    top: 280px
+
+
 
 
 // Specific styles for the speaker series section
 .speaker-series
-  background-image: $hero-bg-gradient
+  background-color: $dark-navy
   width: 95%
   margin: 0 auto
 
@@ -374,14 +384,30 @@
   +grid-column(12)
   padding: 60px 0
   +grid-media($desktop)
-    +grid-column(6)
+    +grid-column(5)
     padding: 80px 0
 
 .speaker-series__title
-  +font-face($h2-size, $h2-weight, $h2-size)
+  +font-face($h2-family, $h2-weight, $h1-size)
+  color: white
+  line-height: 70px
 
-.summer-speaker__subtitle
-  +font-face($h3-family, $h3-weight, $h3-size)
+.speaker-series__subtitle
+  +font-face($h3-family, $h3-weight, 16px)
+  color: white
+  margin: 20px 0
+
+.btn__speaker-series
+  +grid-column(12)
+  @extend .btn
+  order: 4
+  +grid-media($tablet)
+    +grid-column(6)
+  +grid-media($desktop)
+    +grid-column(8)
+    margin-left: 0px
+    display: block
+    clear: both
 
 .speaker-series__speaker-container
   display: none
@@ -421,24 +447,44 @@
 
 .cta
   margin: 200px 0 100px 0
+  h3
+    +font-face($h3-family, $bold, $h3-size)
+    color: $dark-navy
+    text-align: center
+    margin-bottom: 40px
+    +grid-media($desktop)
+      margin-bottom: 80px
 
 .cta__container
   +grid-column(12)
   position: relative
-  border: 2px black solid
   text-align: center
-  padding: 40px 20px
+  padding: 60px 20px
   margin-bottom: 60px
+  background-color: $light-gray
   +grid-media($desktop)
     +grid-column(4)
+.cta__container::before
+  content: ""
+  position: absolute
+  height: 100%
+  width: 100%
+  border: 2px #272B3F solid
+  transform: translate(-53%, -69px)
 
 .cta__header
-  +font-face($h3-family, bold, 36px)
+  +font-face($neuziet, bold, 24px)
   text-align: center
+  text-transform: uppercase
+  letter-spacing: 3px
+  margin-bottom: 20px
+
+.cta__subtitle
+  font-size: 14px
 
 .cta__btn
   position: absolute
-  bottom: -22.5px
+  bottom: -16px
   left: 50%
   transform: translateX(-50%)
   padding: 10px 0

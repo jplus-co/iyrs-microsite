@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Speaker 2
+title:  Nathalie Miebach
 date:   2017-05-15 14:14:19 -0400
 categories: speakers
 speaker-img: http://placehold.it/142x191

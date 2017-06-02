@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Chad Phillips
+title:  Alissia Melka-Teichrow & Jan Habraken
 date:   2017-05-15 14:14:19 -0400
 categories: speakers
 speaker-img: http://placehold.it/142x191
