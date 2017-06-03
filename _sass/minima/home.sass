@@ -1,5 +1,9 @@
 .hero
-  // background-image: $hero-bg-gradient
+  /* Rectangle 10: */
+  opacity: 0.68
+  background-image: -webkit-linear-gradient(top left, #FFDE68 0%, #FF6868 100%)
+  background-image: -o-linear-gradient(top left, #FFDE68 0%, #FF6868 100%)
+  background-image: linear-gradient(to bottom right, #FFDE68 0%, #FF6868 100%)
   height: auto
   width: 100%
   z-index: 0
@@ -17,14 +21,17 @@
 
 .hero__subtitle
   +font-face($h3-family, $h3-weight, $h3-size)
+  color: white
+  margin-top: 20px
 
 .hero__background-text
   +grid-column(6)
+  +font-face($h3-family, 800, 60px)
   position: absolute
   text-transform: uppercase
-  +font-face($h3-family, 800, 60px)
   line-height: 60px
   color: $grey-color-light
+  opacity: .3
   z-index: 1
   top: 50%
   transform: translateY(-50%)
@@ -188,6 +195,7 @@
 .build,
 .engage
   margin-top: 100px
+  position: relative
   +grid-media($desktop)
     margin-top: 200px
 
@@ -247,7 +255,8 @@
 
 // Specific styles for the design section
 .design
-  margin-bottom: 200px
+  +grid-media($desktop)
+    margin-bottom: 300px
 
 .design__header
   +grid-media($desktop)
@@ -276,19 +285,41 @@
     top: 170px
 
 // Specific styles for the build section
-// .build__header
-//   +grid-media($desktop)
-//     +grid-shift(6)
-//     line-height: 84px
-//     +media-query-inbetween(870px, 768px)
-//       +grid-shift(5)
-//
-// .build__subtitle
-//   +grid-media($desktop)
-//
-// .build__description
-//   +grid-media($desktop)
-//     +grid-push(-5)
+.build
+  margin-bottom: 110px
+  padding: 50px 0
+  background-color: $dark-navy
+  +grid-media($desktop)
+    margin-bottom: 0
+
+  .grid-container
+    z-index: 1
+
+.edge--both:before
+  transform: skewY(5deg)
+
+.edge--both:after
+  transform: skewY(-5deg)
+
+.build__bg
+  position: absolute
+  top: 0
+  z-index: 0
+  // img
+  //   max-width: none
+
+.build__header
+  color: white
+  +grid-media($desktop)
+
+.build__subtitle > div
+  color: white
+  +grid-media($desktop)
+
+.build__description
+  color: white
+  +grid-media($desktop)
+
 //
 // .build__img
 //   overflow: visible
@@ -301,6 +332,11 @@
 //     margin-top: 0
 //     right: 0
 //     top: 80px
+
+.svg-wrapper
+  width: 100%
+  overflow: hidden
+
 
 
 // Specific styles for the engage section
@@ -415,7 +451,7 @@
     +grid-column(6)
     display: block
     position: absolute
-    right: 0
+    right: 70px
     top: 50%
     transform: translateY(-50%)
 
@@ -426,23 +462,44 @@
     display: block
 
 .speaker-series__speaker:nth-child(1)
-  bottom: 0
-  margin-bottom: 50px
+  bottom: 140px
 .speaker-series__speaker:nth-child(2)
-  right: 25px
-  top: 50%
+  right: 40px
+  top: -100px
   transform: translateY(-50%)
+  .speaker-name
+    width: 134px
 .speaker-series__speaker:nth-child(3)
   top: 0
-  margin-top: 50px
+.speaker-series__speaker:nth-child(4)
+  top: 120px
+  right: 40px
 
 .speaker-name
+  +font-face($neuziet, $bold, 18px)
   display: none
+  color: white
+  text-transform: uppercase
   +grid-media($desktop)
     display: block
     position: absolute
-    bottom: 10px
-    right: -50px
+    bottom: 70px
+    left: 170px
+
+
+.speaker-images::before
+  content: ""
+  position: absolute
+  border: 4px $yellow solid
+  height: 191px
+  width: 142px
+  z-index: -1
+  transform: translate(10px, 10px)
+  +grid-media($desktop)
+    height: 191px
+    width: 142px
+    z-index: -1
+    transform: translate(10px, 10px)
 
 
 .cta

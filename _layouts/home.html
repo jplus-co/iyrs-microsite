@@ -12,7 +12,7 @@ layout: default
 
   <div class="grid-container">
     <div class="hero__header-container">
-      <div class="dmf-logo">DM&F</div>
+      <div class="dmf-logo"><img src="../img/dmf-logo.svg" /></div>
       <div class="hero__subtitle">Join the maker movement with IYRS’s Digital Modeling and Fabrication program
 located in Newport, Rhode Island.</div>
     </div>
@@ -57,7 +57,7 @@ located in Newport, Rhode Island.</div>
 </div>
 </section>
 
-<section class="build">
+<section class="build edge--both">
   <div class="grid-container flex">
     <div class="build__header">Build</div>
     <div class="build__description">Make anything possible with the additive and subtractive materials necessary for contemporary 3d design in our state-of-the-art Build Studio. </div>
@@ -70,6 +70,13 @@ located in Newport, Rhode Island.</div>
     <div class="btn btn__build"><a href="studio/">Our Build Studio</a></div>
     <!-- <img class="build__img" src="img/materials-mockup.png"/> -->
 </div>
+
+<!-- <div class="svg-wrapper">
+<picture class="build__bg">
+  <img src="../img/build-bg.svg"/>
+</picture> -->
+</div>
+
 </section>
 
 <section class="engage">
@@ -107,8 +114,8 @@ located in Newport, Rhode Island.</div>
 
     <div class="speaker-series__speaker-container">
       {% for post in site.categories.speakers %}
-      <div class="speaker-series__speaker">
-        <img src="{{ post.speaker-img }}"/>
+      <div class="speaker-images speaker-series__speaker">
+        <img class="" src="{{ post.speaker-img }}"/>
         <div class="speaker-name">{{ post.title }}</div>
       </div>
       {% endfor %}
