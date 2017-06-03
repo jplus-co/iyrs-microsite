@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  Alissia Melka-Tiechrow & Jon Habraken
 date:   2017-05-15 14:14:19 -0400
+speech-date: 
 categories: speakers
 speaker-img: http://placehold.it/142x191
 ---

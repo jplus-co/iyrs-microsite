@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  Speaker 1
+title:  Chad Phillips
 date:   2017-05-15 14:14:19 -0400
+speech-date: June 24, 2017
 categories: speakers
 speaker-img: http://placehold.it/142x191
 ---
