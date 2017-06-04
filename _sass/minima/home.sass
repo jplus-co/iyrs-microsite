@@ -1,12 +1,31 @@
+// .hero
+//   /* Rectangle 10: */
+//   opacity: 0.68
+//   // background: url('../img/home-hero-bg.png')
+//   background-image: -webkit-linear-gradient(top left, #FFDE68 0%, #FF6868 100%)
+//   background-image: -o-linear-gradient(top left, #FFDE68 0%, #FF6868 100%)
+//   background-image: linear-gradient(to bottom right, #FFDE68 0%, #FF6868 100%)
+//   height: auto
+//   width: 100%
+//   z-index: 0
+
 .hero
-  /* Rectangle 10: */
-  opacity: 0.68
-  background-image: -webkit-linear-gradient(top left, #FFDE68 0%, #FF6868 100%)
-  background-image: -o-linear-gradient(top left, #FFDE68 0%, #FF6868 100%)
-  background-image: linear-gradient(to bottom right, #FFDE68 0%, #FF6868 100%)
-  height: auto
   width: 100%
-  z-index: 0
+  background: url(../img/home-hero-bg.png) center center no-repeat
+  background-size: cover
+  position: relative
+
+  &:before
+    content: ''
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    background-image: -webkit-linear-gradient(top left, #FFDE68 0%, #FF6868 100%)
+    background-image: -o-linear-gradient(top left, #FFDE68 0%, #FF6868 100%)
+    background-image: linear-gradient(to bottom right, #FFDE68 0%, #FF6868 100%)
+    opacity: .68
 
 .hero__header-container
   +grid-column(12)
@@ -15,6 +34,7 @@
   z-index: 3
   +grid-media($desktop)
     +grid-column(8)
+    +grid-push(1)
 
 .dmf-logo
   +font-face($h3-family, 800, $h1-size)
@@ -26,20 +46,21 @@
 
 .hero__background-text
   +grid-column(6)
-  +font-face($h3-family, 800, 60px)
+  +font-face($neuziet, 800, 60px)
   position: absolute
   text-transform: uppercase
   line-height: 60px
-  color: $grey-color-light
+  color: white
   opacity: .3
   z-index: 1
   top: 50%
   transform: translateY(-50%)
   +grid-media($desktop)
     +grid-column(6)
-    +font-face($h3-family, 800, 124px)
+    font-size: 144px
     position: absolute
-    line-height: 120px
+    line-height: 130px
+    letter-spacing: 2px
     z-index: 1
 
 .hero-video
@@ -63,7 +84,8 @@
   +grid-column(12)
   color: white
   +grid-media($desktop)
-    +grid-column(9)
+    +grid-column(8)
+    +grid-push(1)
 
 .btn__speaker-callout
   +grid-column(12)
@@ -89,6 +111,7 @@
     +grid-push(1)
     display: block
     clear: both
+
 
 .enroll-callout
   +font-face($roboto-mono, $bold, 20px)
@@ -188,7 +211,6 @@
     margin-top: 20px
     +grid-media($desktop)
       margin-top: 40px
-
 
 // Controls the general styles of the main sections
 .design,
@@ -305,8 +327,6 @@
   position: absolute
   top: 0
   z-index: 0
-  // img
-  //   max-width: none
 
 .build__header
   color: white
@@ -336,7 +356,6 @@
 .svg-wrapper
   width: 100%
   overflow: hidden
-
 
 
 // Specific styles for the engage section
@@ -395,7 +414,6 @@
   +grid-media($desktop)
     width: 93%
 
-
 .engage__dot-bg
   position: absolute
   right: 0
@@ -406,7 +424,6 @@
   +grid-media($desktop)
     right: 0px
     top: 280px
-
 
 
 
@@ -486,7 +503,6 @@
     bottom: 70px
     left: 170px
 
-
 .speaker-images::before
   content: ""
   position: absolute
@@ -504,13 +520,24 @@
 
 .cta
   margin: 200px 0 100px 0
+
+.enroll-cta
+  margin-bottom: 40px
+  +grid-media($desktop)
+    margin-bottom: 80px
   h3
     +font-face($h3-family, $bold, $h3-size)
     color: $dark-navy
     text-align: center
-    margin-bottom: 40px
-    +grid-media($desktop)
-      margin-bottom: 80px
+    margin-bottom: 20px
+  div
+    +font-face($roboto-mono, $bold, 14px)
+    margin-bottom: 10px
+    text-align: center
+    a
+      color: $orange
+    a:hover
+      color: darken($orange, 10%)
 
 .cta__container
   +grid-column(12)
@@ -535,9 +562,11 @@
   text-transform: uppercase
   letter-spacing: 3px
   margin-bottom: 20px
+  color: $dark-navy
 
 .cta__subtitle
   font-size: 14px
+  color: $dark-navy
 
 .cta__btn
   position: absolute

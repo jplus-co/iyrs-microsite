@@ -28,17 +28,15 @@
   background-position: right bottom
   transition: background 1.5s $ease-out-quint
   cursor: pointer
-  a
-    color: white
 .btn:hover
   background-position: left bottom
-  a
-    text-decoration: none
-    color: white
-  a:visited
-    color: white
-  a:hover
-    text-decoration: none
+a.btn
+  text-decoration: none
+  color: white
+a.btn:visited
+  color: white
+a.btn:hover
+  text-decoration: none
 
 .sidebar-contact
   +grid-column(12)
@@ -220,7 +218,6 @@ header
   +grid-media($desktop)
     +grid-column(12)
 
-.footer__form
 
 .footer__nav
   +grid-media($desktop)
