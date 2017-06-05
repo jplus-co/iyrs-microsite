@@ -91,10 +91,16 @@
 
 // Site header
 .site-header
-  min-height: 54px
-  padding: 0 40px
-  // Positioning context for the mobile navigation icon
-  position: relative
+  position: fixed
+  background-color: white
+  z-index: 1  
+  +grid-media($desktop)
+    min-height: 54px
+    padding: 0 40px
+    // Positioning context for the mobile navigation icon
+    position: fixed
+    background-color: white
+    z-index: 1  
 
 .site-title
   @include relative-font-size(1.625)
@@ -107,7 +113,8 @@
   &,
   &:visited
     color: $grey-color-dark
-
+  +grid-media($desktop)
+    width: 1975px
 
 header
   display: flex
@@ -115,10 +122,13 @@ header
   align-items: center
 
 .nav
-  line-height: $base-line-height * $base-font-size * 2.25
-  position: relative
-  overflow: hidden
-  z-index: 100
+  margin-left: 300px
+  position: fixed
+  +grid-media($desktop)
+    line-height: $base-line-height * $base-font-size * 2.25
+    overflow: hidden
+    z-index: 1
+    margin-left: 1060px
 
   .line
     position: absolute
