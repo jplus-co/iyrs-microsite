@@ -21,24 +21,25 @@
     +grid-push(0)
     +font-face($h3-family, 800, 15px)
 
-.arrow-right
-  width: 0 
-  height: 0
-  border-top: 10px solid transparent
-  border-bottom: 10px solid transparent
-  border-left: 10px solid $orange
-
+.triangle-right
+  width: 20px
+  height: 20px
+  margin-left: 10px
+  +grid-media($desktop)
+    width: 15px
+    height: 20px
+    margin-left: 20px
 
 //Speaker Section
 .speaker-section
   margin-top: 80px
 
-.speaker-section-title
+.speaker-section__title
   +grid-column(12)
   font-size: 30px
   +grid-media($desktop)
-    +grid-shift(-2)
     +font-face($h3-family, 800, 35px)
+    +grid-push(0)
 
 .speaker-name-spacing
   margin-top: 15px
@@ -46,6 +47,8 @@
   +grid-media($desktop)
     margin-top: 20px
     margin-bottom: 0px
+    font-weight: bold
+    font-size: 15px
 
 .speaker-images
   +grid-column(12)
@@ -68,6 +71,13 @@
     width: 142px
     z-index: -1
     transform: translate(10px, 10px)
+
+.speaker-images__size
+  width: 142px
+  height: 191px
+  +grid-media($desktop)
+    width: 142px
+    height: 191px
 
 .speeches-block
   +grid-column(12)

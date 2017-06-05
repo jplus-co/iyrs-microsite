@@ -10,20 +10,20 @@ subtitle: June through September, 2017
 <div class="info-container grid-container">
   <div class="info-title"> Some text about the speakers and workshops. Some text about the speakers and workshops. 
     Some text about the speakers and workshops and how it relates to the DM&F Program…</div>
-		<a class="info-link">
-			<span>View full workshop & speaker details</span>
-			<i class="arrow-right"></i>
-		</a>
-
+		<div class="curriculum__catalog info-link">
+				<a href="">View full workshop & speaker calendar
+					<img class="triangle-right" src="/img/triangle.png" />
+				</a>	
+		</div>
 </div>
 
 <div class="speaker-section grid-container ">
-  <div class="speaker-section-title"> Our Speakers </div>
+  <div class="speaker-section__title"> Our Speakers </div>
 
 <div>
   {% for post in site.categories.speakers %}
   <div class="speaker-images">
-    <img src="{{ post.speaker-img }}"/>
+    <img class ="speaker-images__size" src="{{ post.speaker-img }}"/>
 		<p class="speaker-name-spacing">{{ post.title }}</p>
 		<p>{{ post.speech-date }}</p>
   </div>
