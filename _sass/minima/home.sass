@@ -112,7 +112,6 @@
     display: block
     clear: both
 
-
 .enroll-callout
   +font-face($roboto-mono, $bold, 20px)
   text-align: center
@@ -211,6 +210,9 @@
     margin-top: 20px
     +grid-media($desktop)
       margin-top: 40px
+
+.enroll__btn
+  margin-top: 20px
 
 // Controls the general styles of the main sections
 .design,
@@ -471,6 +473,9 @@
     right: 70px
     top: 50%
     transform: translateY(-50%)
+    img
+      +media-query-inbetween(1120px, 768px)
+        max-width: 80%
 
 .speaker-series__speaker
   display: none
@@ -484,12 +489,14 @@
   right: 40px
   top: -100px
   transform: translateY(-50%)
+  +media-query-inbetween(1120px, 768px)
+    right: 60px
   .speaker-name
     width: 134px
 .speaker-series__speaker:nth-child(3)
   top: 0
 .speaker-series__speaker:nth-child(4)
-  top: 120px
+  top: 140px
   right: 40px
 
 .speaker-name
@@ -502,13 +509,13 @@
     position: absolute
     bottom: 70px
     left: 170px
+  +media-query-inbetween(1120px, 768px)
+    left: 135px
 
 .speaker-images::before
   content: ""
   position: absolute
   border: 4px $yellow solid
-  height: 191px
-  width: 142px
   z-index: -1
   transform: translate(10px, 10px)
   +grid-media($desktop)
@@ -516,7 +523,9 @@
     width: 142px
     z-index: -1
     transform: translate(10px, 10px)
-
+  +media-query-inbetween(1120px, 768px)
+    height: 153px
+    width: 115px
 
 .cta
   margin: 200px 0 100px 0
