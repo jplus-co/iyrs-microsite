@@ -9,9 +9,9 @@ permalink: /studio/
 	<p class="build-space-opening-date">
 		The build space is opening September 2017
 	</p>
-	<img class="machines-img" src="/img/11_machines.png" />
-	<img class="machines-rectangle" src="/img/Rectangle.png"/>
-	<img class="dot-bg" src="/img/dot-bg.png" />
+	<img class="machines-img" src="../img/11_machines.png" />
+	<img class="machines-rectangle" src="../img/Rectangle.png"/>
+	<img class="dot-bg" src="../img/dot-bg.png" />
 	
 	<div class="square-feet-title">
 		<span class="square-feet-title__size">6,000</span>
@@ -25,8 +25,8 @@ permalink: /studio/
 		<span>machines</span>
 	</div>
 	<div class="square-feet-img__spacing">
-		<img class="square-feet-img" src="/img/6000_square_feet.png"/>
-		<img class="square-feet-rectangle" src="/img/Rectangle1.png"/>
+		<img class="square-feet-img" src="../img/6000_square_feet.png"/>
+		<img class="square-feet-rectangle" src="../img/Rectangle1.png"/>
 	</div>
 </div>
 
@@ -43,23 +43,23 @@ permalink: /studio/
 </div>
 
 <div class="grid-container machine-options-section">
-	<img class="large_dot_bg" src="/img/large_dot_bg.png">
+	<img class="large_dot_bg" src="../img/large_dot_bg.png">
 	<div class="grid-container">
 		<div class="laser-cutter">
-			<img class="laser-cutter__fill" src="/img/laser_fill.png" />
-			<img class="laser-cutter__outline" src="/img/laser_outline.png"/>
+			<img class="laser-cutter__fill" src="../img/laser_fill.png" />
+			<img class="laser-cutter__outline" src="../img/laser_outline.png"/>
 			<h4 class="laser-cutter__title">Laser cutters</h4>
 		</div>
 
 		<div class="CNC">
-			<img class="CNC__fill" src="/img/CNC_fill.png" />
-			<img class="CNC__outline" src="/img/CNC_outline.png"/>
+			<img class="CNC__fill" src="../img/CNC_fill.png" />
+			<img class="CNC__outline" src="../img/CNC_outline.png"/>
 			<h4 class="CNC__title">CNC mills</h4>
 		</div>
 
 		<div class="ThreeD-printer">
-			<img class="ThreeD-printer__fill" src="/img/3D_fill.png" />
-			<img class="ThreeD-printer__outline" src="/img/3D_outline.png"/>
+			<img class="ThreeD-printer__fill" src="../img/3D_fill.png" />
+			<img class="ThreeD-printer__outline" src="../img/3D_outline.png"/>
 			<h4 class="ThreeD-printer__title">3D printers</h4>
 		</div>
 	</div>

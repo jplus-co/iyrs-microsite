@@ -12,7 +12,7 @@ subtitle: June through September, 2017
     Some text about the speakers and workshops and how it relates to the DM&F Program…</div>
 		<div class="curriculum__catalog info-link">
 				<a href="">View full workshop & speaker calendar
-					<img class="triangle-right" src="/img/triangle.png" />
+					<img class="triangle-right" src="../img/triangle.png" />
 				</a>	
 		</div>
 </div>
