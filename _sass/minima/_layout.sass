@@ -224,16 +224,35 @@ header
 
 .footer__nav
   +grid-media($desktop)
-    +grid-column(8)
-    +grid-push(2)
-    text-align: center
+    +grid-shift(-1)
   ul
     list-style: none
   ul li
-    float: right
-    margin-right: 20px
+    +grid-column(2)
+    +grid-push(1)
 
 .footer__iyrs-logo
+
+.email-input
+  +grid-media($desktop)
+    background-color: #E8EEEE
+    border: 0px solid black
+    border-bottom: 1px solid black
+    width: 80%
+    height: 25px
+    margin-left: 50px
+    margin-top: 20px
+
+.signup-arrow
+  +grid-media($desktop)
+    width: 20px
+    height: 10px
+
+.signup-button 
+  +grid-media($desktop)
+    border: none
+    background-color: #E8EEEE
+    +grid-push(6)
 
 //Page content
 .page-content
