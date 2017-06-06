@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Alissia Melka-Tiechrow & Jon Habraken
+title:  Nathalie Miebach
 date:   2017-05-15 14:14:19 -0400
 speech-date: 
 categories: speakers
