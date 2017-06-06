@@ -13,18 +13,16 @@ permalink: /studio/
 	<img class="machines-rectangle" src="/img/Rectangle.png"/>
 	<img class="dot-bg" src="/img/dot-bg.png" />
 	
-	<div class="square-feet-title" >
-		<h1 class="square-feet-title__size" id="square-feet__yellow-rectangle">
-			6,000
-		</h1>
-		<h1 class="square-feet-title__size">square feet</h1>
+	<div class="square-feet-title">
+		<span class="square-feet-title__size">6,000</span>
+		<span>square feet</span>
 	</div>
 </div>
 
 <div class="grid-container machines-section">
 	<div class="machines-title">
-		<h1 class="machines-title__size">11</h1><br>
-		<h1 class="machines-title__size">machines</h1>
+		<span class="machines_title__size">11</span><br>
+		<span>machines</span>
 	</div>
 	<div class="square-feet-img__spacing">
 		<img class="square-feet-img" src="/img/6000_square_feet.png"/>

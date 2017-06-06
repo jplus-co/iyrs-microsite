@@ -31,7 +31,7 @@
 	+grid-column(12)
 	+grid-push(2)
 	position: absolute
-	margin-top: 450px
+	margin-top: 500px
 	+grid-media($desktop)
 		margin-left: 450px
 		margin-top: 50px
@@ -42,27 +42,47 @@
 	+grid-push(2)
 	margin-bottom: 50px
 	margin-top: 25px
-	line-height: 30px
+	line-height: 50px
+	+font-face($neuziet, $regular, 50px)
 	+grid-media($desktop)
 		margin-top: -100px
-		
-
-.square-feet-title__size
-	+grid-media($desktop)
+		+font-face($neuziet, $regular, 70px)
 		text-align: right
-		+font-face($h1-family, $h1-weight, 50px)
-		position: relative
 
-
-#square-feet__yellow-rectangle 
+		
+.square-feet-title__size
+	position: relative
+	z-index: 0
+	margin-right: 45px
+	line-height: 40px
 	+grid-media($desktop)
-		+grid-push(9)
-		width: 165px
-		height: 60px
-		background: $yellow
-		postition: relative
-		padding-top: 20px
-	
+		margin-top: -20px
+		margin-right: 0px
+.square-feet-title__size::after
+	content: ""
+	position: absolute
+	border: 2px black solid
+	height: 50px
+	width: 135px
+	transform: translate(-125px, 3px)
+	+grid-media($desktop)
+		height: 80px
+		width: 175px
+		transform: translate(-150px, -42px)
+.square-feet-title__size::before
+	content: ""
+	position: absolute
+	background-color: #FFDE68
+	height: 50px
+	width: 135px
+	z-index: -1
+	transform: translate(-20px, -3px)
+	+grid-media($desktop)
+		height: 80px
+		width: 175px
+		z-index: -1
+		transform: translate(-17px, -32px)	
+
 
 .square-feet-img__spacing 
 	+grid-media($desktop)
@@ -70,8 +90,9 @@
 
 //machines section 
 .machines-section
-	margin-top: 150px
+	margin-top: 200px
 	+grid-media($desktop)
+		margin-top: 125px
 		
 .machines-img
 	width: 200px
@@ -108,27 +129,59 @@
 
 .machines-title
 	+grid-push(2)
-	margin-bottom: 55px
-	position: absolute
-	margin-top: 250px
+	margin-top: 20px
+	margin-bottom: 50px
+	margin-top: 25px
+	line-height: 30px
+	+font-face($neuziet, $regular, 50px)
+	line-height: 40px
 	+grid-media($desktop)
-		+font-face($h1-family, $h1-weight, 30px)
+		+font-face($neuziet, $regular, 70px)
 		text-align: left
-		position: relative
 		+grid-push(0)
+		margin-left: -5px
+		line-height: 60px
 		margin-top: -100px
 
 .machines-title__size
-	line-height: 10px
+	position: relative
+	z-index: 0
+	+grid-media($desktop)
+		margin-bottom: 20px
+.machines_title__size::after
+	content: ""
+	position: absolute
+	border: 2px black solid
+	height: 45px
+	width: 55px
+	transform: translate(-48px, -2px)
+	+grid-media($desktop)
+		height: 69px
+		width: 80px
+		transform: translate(-68px, -9px)
+.machines_title__size::before
+	content: ""
+	position: absolute
+	background-color: #FFDE68
+	height: 45px
+	width: 55px
+	z-index: -1
+	transform: translate(-5px, -7px)
+	+grid-media($desktop)
+		height: 70px
+		width: 75px
+		z-index: -1
+		transform: translate(-2px, 1px)	
+
 
 //tools creation 
 .tools-for-creation
-	margin-top: 150px
+	margin-top: 100px
 	max-width: 250px
 	+grid-media($desktop)
 		+grid-shift(-1)
 		max-width: 600px
-		margin-top: 150px
+		margin-top: 50px
 
 .tools-for-creation__title
 	+grid-media($desktop)
