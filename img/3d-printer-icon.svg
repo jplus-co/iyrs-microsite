@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="145px" height="144px" viewBox="0 0 145 144" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>3d-printer-icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="sub-pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="screens/build-studio_desktop" transform="translate(-973.000000, -1742.000000)" fill-rule="nonzero">
+            <g id="section_machines" transform="translate(0.000000, 1645.000000)">
+                <g id="3d-printer-icon" transform="translate(974.000000, 98.000000)">
+                    <g id="3D-Fill" transform="translate(3.000000, 2.000000)" fill="#FFDE68">
+                        <rect id="Rectangle-path" x="31.3333333" y="79.9" width="78.3333333" height="47"></rect>
+                        <rect id="Rectangle-path" x="31.3333333" y="65.8" width="78.3333333" height="9.4"></rect>
+                        <rect id="Rectangle-path" x="0" y="131.6" width="141" height="9.4"></rect>
+                        <path d="M81.4666667,42.3 C81.4666667,47.4841 77.2507667,51.7 72.0666667,51.7 L32.9,51.7 L31.3333333,51.7 L31.3333333,61.1 L32.9,61.1 L72.0666667,61.1 C82.4333,61.1 90.8666667,52.6666333 90.8666667,42.3 L81.4666667,42.3 Z" id="Shape"></path>
+                        <polygon id="Shape" points="141 6.26666667 100.266667 6.26666667 100.266667 0 72.0666667 0 72.0666667 6.26666667 0 6.26666667 0 15.6666667 72.0666667 15.6666667 72.0666667 21.9333333 81.4666667 37.6 90.8666667 37.6 100.266667 21.9333333 100.266667 15.6666667 141 15.6666667"></polygon>
+                    </g>
+                    <g id="3D-Outline" stroke="#272B3F">
+                        <rect id="Rectangle-path" x="31.3333333" y="79.9" width="78.3333333" height="47"></rect>
+                        <rect id="Rectangle-path" x="31.3333333" y="65.8" width="78.3333333" height="9.4"></rect>
+                        <rect id="Rectangle-path" x="0" y="131.6" width="141" height="9.4"></rect>
+                        <path d="M81.4666667,42.3 C81.4666667,47.4841 77.2507667,51.7 72.0666667,51.7 L32.9,51.7 L31.3333333,51.7 L31.3333333,61.1 L32.9,61.1 L72.0666667,61.1 C82.4333,61.1 90.8666667,52.6666333 90.8666667,42.3 L81.4666667,42.3 Z" id="Shape"></path>
+                        <polygon id="Shape" points="141 6.26666667 100.266667 6.26666667 100.266667 0 72.0666667 0 72.0666667 6.26666667 0 6.26666667 0 15.6666667 72.0666667 15.6666667 72.0666667 21.9333333 81.4666667 37.6 90.8666667 37.6 100.266667 21.9333333 100.266667 15.6666667 141 15.6666667"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

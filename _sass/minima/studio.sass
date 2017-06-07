@@ -1,4 +1,4 @@
-//square feet section 
+//square feet section
 .square-feet-section
 	margin-top: 75px
 	+grid-media($desktop)
@@ -26,8 +26,8 @@
 		z-index: 0
 		width: 455px
 		height: 280px
-		
-.build-space-opening-date 
+
+.build-space-opening-date
 	+grid-column(12)
 	+grid-push(2)
 	position: absolute
@@ -37,19 +37,19 @@
 		margin-top: 50px
 		max-width: 250px
 		color: #D8D8D8
-		
+
 .square-feet-title
 	+grid-push(2)
 	margin-bottom: 50px
 	margin-top: 25px
 	line-height: 50px
-	+font-face($neuziet, $regular, 50px)
+	+font-face($neuziet, $bold, 50px)
 	+grid-media($desktop)
 		margin-top: -100px
-		+font-face($neuziet, $regular, 70px)
+		+font-face($neuziet, $bold, 70px)
 		text-align: right
 
-		
+
 .square-feet-title__size
 	position: relative
 	z-index: 0
@@ -81,19 +81,19 @@
 		height: 80px
 		width: 175px
 		z-index: -1
-		transform: translate(-17px, -32px)	
+		transform: translate(-17px, -32px)
 
 
-.square-feet-img__spacing 
+.square-feet-img__spacing
 	+grid-media($desktop)
 		margin-top: -150px
 
-//machines section 
+//machines section
 .machines-section
 	margin-top: 200px
 	+grid-media($desktop)
 		margin-top: 125px
-		
+
 .machines-img
 	width: 200px
 	height: 300px
@@ -133,10 +133,10 @@
 	margin-bottom: 50px
 	margin-top: 25px
 	line-height: 30px
-	+font-face($neuziet, $regular, 50px)
+	+font-face($neuziet, $bold, 50px)
 	line-height: 40px
 	+grid-media($desktop)
-		+font-face($neuziet, $regular, 70px)
+		+font-face($neuziet, $bold, 70px)
 		text-align: left
 		+grid-push(0)
 		margin-left: -5px
@@ -171,10 +171,10 @@
 		height: 70px
 		width: 75px
 		z-index: -1
-		transform: translate(-2px, 1px)	
+		transform: translate(-2px, 1px)
 
 
-//tools creation 
+//tools creation
 .tools-for-creation
 	margin-top: 100px
 	max-width: 250px
@@ -184,8 +184,9 @@
 		margin-top: 50px
 
 .tools-for-creation__title
+	+font-face($neuziet, $h3-weight, 36px)
 	+grid-media($desktop)
-		+font-face($h3-family, $h3-weight, 20px)
+		+font-face($neuziet, $h3-weight, 36px)
 
 .machine-options-section
 	margin-top: 100px
@@ -199,21 +200,13 @@
 		display: block
 
 
-//Laser Cutter Image	
+//Laser Cutter Image
 .laser-cutter
 	+grid-push(3)
 	+grid-media($desktop)
-		+grid-column(3) 
+		+grid-column(3)
 		+grid-push(1)
 		margin-top: -200px
-
-.laser-cutter__outline
-	margin-left: -155px
-	margin-top: -5px
-	+grid-media($desktop)
-		width: 130px
-		margin-left: -143px
-		margin-top: -5px
 
 .laser-cutter__fill
 	+grid-media($desktop)
@@ -229,17 +222,9 @@
 	+grid-push(3)
 	margin-top: 50px
 	+grid-media($desktop)
-		+grid-column(3) 
+		+grid-column(3)
 		+grid-push(5)
 		margin-top: -200px
-
-.CNC__outline
-	margin-left: -155px
-	margin-top: -5px
-	+grid-media($desktop)
-		width: 130px
-		margin-left: -143px
-		margin-top: -5px
 
 .CNC__fill
 	+grid-media($desktop)
@@ -254,17 +239,9 @@
 	+grid-push(3)
 	margin-top: 50px
 	+grid-media($desktop)
-		+grid-column(3) 
+		+grid-column(3)
 		+grid-push(9)
 		margin-top: -200px
-
-.ThreeD-printer__outline
-	margin-left: -155px
-	margin-top: -5px
-	+grid-media($desktop)
-		width: 130px
-		margin-left: -143px
-		margin-top: -5px
 
 .ThreeD-printer__fill
 	+grid-media($desktop)
@@ -274,59 +251,58 @@
 	+grid-media($desktop)
 		margin-top: 10px
 
+.tools-container
+	margin-bottom: 100px
+
 //Software List
 .software-list
 	+grid-push(2.5)
 	margin-top: 40px
 	list-style-type: none
-	line-height: 35px
+	line-height: 28px
 	font-size: 12px
 	+grid-media($desktop)
 		+grid-column(4)
 		+grid-push(1)
-		line-height: 35px
+		line-height: 28px
 
 .software-list__title
 	font-size: 25px
 	+grid-media($desktop)
 		margin-bottom: 30px
-		font-size: 35px
 
 //Machines List
 .machines-list
 	+grid-push(2.5)
 	margin-top: 40px
 	list-style-type: none
-	line-height: 35px
+	line-height: 28px
 	font-size: 12px
 	+grid-media($desktop)
 		+grid-column(4)
 		margin-top: 40px
 		list-style-type: none
-		line-height: 35px
+		line-height: 28px
 
 .machines-list__title
 	font-size: 25px
 	+grid-media($desktop)
 		margin-bottom: 30px
-		font-size: 35px
 
 //Electronics List
 .electronics-list
 	+grid-push(2.5)
 	margin-top: 40px
 	list-style-type: none
-	line-height: 35px
+	line-height: 28px
 	font-size: 12px
 	+grid-media($desktop)
 		+grid-column(3)
 		margin-top: 40px
 		list-style-type: none
-		line-height: 35px
+		line-height: 28px
 
 .electronics-list__title
 	font-size: 25px
 	+grid-media($desktop)
 		margin-bottom: 30px
-		font-size: 35px
-
