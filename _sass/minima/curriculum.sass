@@ -27,23 +27,36 @@
     +font-face($roboto-mono, $bold, 14px)
     font-style: italic
     color: $dark-blue-gray
+  a
+    width: 100%
+    display: block
+    cursor: pointer
+    user-select: none
+    position: relative
+    padding-left: 16px
+    transition: 0.2s all ease-in-out
+    &:before
+      font-size: 20px
+      content: "+"
+      position: absolute
+      top: -6px
+      left: -2px
+      transform: rotate(0deg)
+      transition: 0.2s all ease-in-out
+
+  a.active:before
+    transform: rotate(45deg)
+    transition: 0.2s all ease-in-out
+  a:hover
+    color: $orange
+    transition: 0.2s all ease-in-out
+  a.active
+    color: $orange
+
 
 .class-list__class-desc
   display: none
   margin: 0px 0px 16px 16px
-
-.curriculum__catalog,
-.curriculum__certification,
-.key-dates__application-process
-  +font-face($roboto-mono, $bold, 16px)
-  margin-bottom: 10px
-  a
-    color: $orange
-  a:hover
-    color: darken($orange, 10%)
-
-.curriculum__catalog
-  margin-top: 30px
 
 .program-info
   +grid-column(12)
@@ -69,7 +82,7 @@
   position: absolute
   bottom: 0
   z-index: -1
-  background: url(../img/bg_dots-half@2x.png)
+  background: url(./img/bg_dots-half@2x.png)
   background-size: contain
   background-repeat: repeat-x
   display: inline-block

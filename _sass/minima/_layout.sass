@@ -15,7 +15,6 @@
   @include grid-media($desktop)
     display: block
 
-
 // Main button style
 .btn
   background: $orange
@@ -28,17 +27,15 @@
   background-position: right bottom
   transition: background 1.5s $ease-out-quint
   cursor: pointer
-  a
-    color: white
 .btn:hover
   background-position: left bottom
-  a
-    text-decoration: none
-    color: white
-  a:visited
-    color: white
-  a:hover
-    text-decoration: none
+a.btn
+  text-decoration: none
+  color: white
+a.btn:visited
+  color: white
+a.btn:hover
+  text-decoration: none
 
 .sidebar-contact
   +grid-column(12)
@@ -88,6 +85,19 @@
   +grid-media($desktop)
     +grid-column(7)
     padding: 30px 0
+
+.curriculum__catalog,
+.curriculum__certification,
+.key-dates__application-process
+  +font-face($roboto-mono, $bold, 16px)
+  margin-bottom: 10px
+  a
+    color: $orange
+  a:hover
+    color: darken($orange, 10%)
+
+.curriculum__catalog
+  margin-top: 30px
 
 // Site header
 .site-header
