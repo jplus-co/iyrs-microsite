@@ -206,9 +206,11 @@
 
 .machine-options-section
 	margin-top: 100px
+	+grid-push(0)
 	+grid-media($desktop)
 		margin-top: 100px
 		+grid-column(12)
+		+grid-push(3)
 
 .machine__title
 	font-size: 12px
@@ -221,6 +223,8 @@
 	+grid-media($desktop)
 		width: 100%
 		display: block
+		height: 100%
+		margin-bottom: 0px
 
 
 //Laser Cutter Image
