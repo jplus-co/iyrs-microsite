@@ -230,18 +230,57 @@ header
   +grid-media($desktop)
     +grid-column(12)
 
+.footer__nav-item-color
+  color: black
+
 .footer__nav
   +grid-media($desktop)
-    +grid-column(8)
-    +grid-push(2)
-    text-align: center
+    +grid-shift(-.25)
+    margin-top: 10px
   ul
     list-style: none
   ul li
-    float: right
-    margin-right: 20px
+    +grid-column(2)
+    +grid-push(1)
 
 .footer__iyrs-logo
+  +grid-media($desktop)
+    width: 75px
+    height: 25px
+    +grid-push(5.5)
+    margin-top: 15px
+    background-color: #E8EEEE
+
+.email-input
+  +grid-media($desktop)
+    background-color: #E8EEEE
+    border: 0px solid black
+    border-bottom: 1px solid black
+    width: 80%
+    height: 25px
+    margin-left: 50px
+    margin-top: 20px
+    +grid-column(9)
+    +grid-push(1.5)
+
+.signup-arrow
+  +grid-media($desktop)
+    width: 20px
+    height: 10px
+
+.signup-button 
+  +grid-media($desktop)
+    border: none
+    background-color: #E8EEEE
+    margin-top: 25px
+    +grid-column(1)
+
+.footer__privacy-policy
+  +grid-media($desktop)
+    font-size: 10px
+    width: 600px
+    +grid-push(2)
+    margin-top: 15px
 
 //Page content
 .page-content
