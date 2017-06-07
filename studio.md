@@ -10,12 +10,13 @@ subtitle: With state of the art machines, build anything possible at the DM&F Bu
 	<p class="build-space-opening-date">
 		The build space is opening September 2017
 	</p>
-	<img class="machines-img" src="../img/11_machines.png" />
-	<img class="machines-rectangle" src="../img/Rectangle.png"/>
+	<span class="machines-img">
+		<img  src="../img/11_machines.png" />
+	</span>
 	<img class="dot-bg" src="../img/dot-bg.png" />
 
 	<div class="square-feet-title">
-		<span class="square-feet-title__size">6,000</span>
+		<span class="square-feet-title__size">6,000</span><br>
 		<span>square feet</span>
 	</div>
 </div>
@@ -26,8 +27,9 @@ subtitle: With state of the art machines, build anything possible at the DM&F Bu
 		<span>machines</span>
 	</div>
 	<div class="square-feet-img__spacing">
-		<img class="square-feet-img" src="../img/6000_square_feet.png"/>
-		<img class="square-feet-rectangle" src="../img/Rectangle1.png"/>
+		<span class="square-feet-img">
+			<img src="../img/6000_square_feet.png"/>
+		</span>
 	</div>
 </div>
 
@@ -48,17 +50,17 @@ subtitle: With state of the art machines, build anything possible at the DM&F Bu
 	<div class="grid-container">
 		<div class="laser-cutter">
 			<img class="laser-cutter__fill" src="../img/laser-cutter-icon.svg" />
-			<h4 class="laser-cutter__title">Laser cutters</h4>
+			<h4 class="machine__title">Laser cutters</h4>
 		</div>
 
 		<div class="CNC">
 			<img class="CNC__fill" src="../img/cnc-icon.svg" />
-			<h4 class="CNC__title">CNC mills</h4>
+			<h4 class="machine__title">CNC mills</h4>
 		</div>
 
 		<div class="ThreeD-printer">
 			<img class="ThreeD-printer__fill" src="../img/3d-printer-icon.svg" />
-			<h4 class="ThreeD-printer__title">3D printers</h4>
+			<h4 class="machine__title">3D printers</h4>
 		</div>
 	</div>
 </div>
