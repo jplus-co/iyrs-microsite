@@ -47,6 +47,7 @@ var transform = function transform(index) {
 };
 
 var onMouseOver = function onMouseOver(evt) {
+	line.style.display = "block";
 	var index = links.indexOf(evt.currentTarget);
 	line.style.transform = transform(index);
 };
@@ -60,8 +61,7 @@ var toCurrent = function toCurrent(evt) {
     }
 		if (document.links[i].href == document.URL 
 					&& document.links[i].className == "site-title") {
-			var index = links.indexOf(document.links[1]);
-			line.style.transform = transform(index);
+				line.style.display = "none";
 		}
 	}
 };
@@ -86,9 +86,6 @@ var init = function init() {
 };
 
 init();
-
-
-
 
   </script>
 
