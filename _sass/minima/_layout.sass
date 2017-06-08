@@ -100,11 +100,20 @@ a.btn:hover
   margin-top: 30px
 
 // Site header
+.trigger
+  +grid-media($desktop)
+    margin-left: 200px
 .site-header
-  min-height: 54px
-  padding: 0 40px
-  // Positioning context for the mobile navigation icon
-  position: relative
+  position: fixed
+  background-color: white
+  z-index: 1  
+  +grid-media($desktop)
+    min-height: 54px
+    padding: 0 40px
+    // Positioning context for the mobile navigation icon
+    position: fixed
+    background-color: white
+    z-index: 1  
 
 .site-title
   @include relative-font-size(1.625)
@@ -117,6 +126,8 @@ a.btn:hover
   &,
   &:visited
     color: $grey-color-dark
+  +grid-media($desktop)
+    width: 1975px
 
 .IYRS-link
   +grid-media($desktop)
@@ -134,18 +145,25 @@ a.btn:hover
     padding-top: 7px
     font-size: 13px
 
-
-
 header
   display: flex
   justify-content: space-between
   align-items: center
 
+.current-page-header_highlight
+  +grid-media($desktop)
+    color: #ff5555 !important
+    font-size: 14px
+    margin-right: 20px
+
 .nav
-  line-height: $base-line-height * $base-font-size * 2.25
-  position: relative
-  overflow: hidden
-  z-index: 100
+  margin-left: 300px
+  position: fixed
+  +grid-media($desktop)
+    line-height: $base-line-height * $base-font-size * 2.25
+    overflow: hidden
+    z-index: 1
+    margin-left: 1060px
 
   .line
     position: absolute
@@ -180,8 +198,6 @@ header
       transition: color .2s ease-in-out
       color: red
 
-    &[aria-current="page"]
-      color: #ff5555
 
   @include media-query($on-palm)
     position: absolute
@@ -228,11 +244,15 @@ header
         margin-right: 0
         margin-left: 20px
 
+.page-link
+  +grid-media($desktop)
+    color: $text-color 
+
 .btn__nav-apply
   padding: 0
   +grid-media($desktop)
     display: inline
-    padding: 7px 30px
+    padding: 5px 26px 6px 26px
 
 //Site footer
 

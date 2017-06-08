@@ -24,11 +24,16 @@
           {% for path in page_paths %}
             {% assign my_page = site.pages | where: "path", path | first %}
             {% if my_page.link-name %}
-            <a class="nav__page-link" href="{{ my_page.url | relative_url }}">{{ my_page.link-name | escape }}</a>
+            <a  class="nav__page-link" href="{{ my_page.url | relative_url }}">
+              {{ my_page.link-name | escape }}
+            </a>
             {% endif %}
           {% endfor %}
-          <a aria-current="page" class="nav__page-link" href="{{ my_page.url | relative_url }}">Request Visit</a>
-          <div class="btn btn__nav-apply"><a id="nav__apply" class="page-link" href="{{ my_page.url | relative_url }}">Apply</a></div>
+          
+            <a id="nav__apply" style="color: white ;" target="_blank" class="btn btn__nav-apply" href="https://iyrs.typeform.com/to/vNhdlS">
+              Apply
+            </a>
+          
           <div class="line"></div>
         </div>
       </nav>
