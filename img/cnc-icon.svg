@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="145px" height="145px" viewBox="0 0 145 145" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>cnc-icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="sub-pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="screens/build-studio_desktop" transform="translate(-646.000000, -1741.000000)" fill-rule="nonzero">
+            <g id="section_machines" transform="translate(0.000000, 1645.000000)">
+                <g id="cnc-icon" transform="translate(647.000000, 97.000000)">
+                    <g id="CNC-fill" transform="translate(3.000000, 3.000000)" fill="#84E3DD">
+                        <rect id="Rectangle-path" x="0" y="131.6" width="141" height="9.4"></rect>
+                        <polygon id="Shape" points="76.7666667 79.9 76.7666667 51.7 33.0801667 51.7 31.3333333 51.7 31.3333333 79.9 31.3333333 126.9 109.666667 126.9 109.666667 79.9"></polygon>
+                        <polygon id="Shape" points="100.266667 6.26666667 100.266667 0 72.0666667 0 72.0666667 6.26666667 0 6.26666667 0 15.6666667 72.0666667 15.6666667 72.0666667 21.9333333 81.4666667 37.6 81.4666667 53.2682333 90.8666667 37.6 100.266667 21.9333333 100.266667 15.6666667 141 15.6666667 141 6.26666667"></polygon>
+                        <polygon id="Shape" points="90.8666667 75.2 90.8666667 59.5302 81.4666667 75.2"></polygon>
+                        <polygon id="Shape" points="81.4666667 59.361 81.4666667 69.1088 90.8666667 53.4405667 90.8666667 43.6912"></polygon>
+                    </g>
+                    <g id="CNC-Outline" stroke="#272B3F">
+                        <rect id="Rectangle-path" x="0" y="131.6" width="141" height="9.4"></rect>
+                        <polygon id="Shape" points="76.7666667 79.9 76.7666667 51.7 33.0801667 51.7 31.3333333 51.7 31.3333333 79.9 31.3333333 126.9 109.666667 126.9 109.666667 79.9"></polygon>
+                        <polygon id="Shape" points="100.266667 6.26666667 100.266667 0 72.0666667 0 72.0666667 6.26666667 0 6.26666667 0 15.6666667 72.0666667 15.6666667 72.0666667 21.9333333 81.4666667 37.6 81.4666667 53.2682333 90.8666667 37.6 100.266667 21.9333333 100.266667 15.6666667 141 15.6666667 141 6.26666667"></polygon>
+                        <polygon id="Shape" points="90.8666667 75.2 90.8666667 59.5302 81.4666667 75.2"></polygon>
+                        <polygon id="Shape" points="81.4666667 59.361 81.4666667 69.1088 90.8666667 53.4405667 90.8666667 43.6912"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
