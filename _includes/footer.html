@@ -49,7 +49,7 @@
       </ul>
     </div>
     <div class="footer__iyrs-logo">
-			<img src="../img/IYRS-logo.jpg">
+			<img src="./img/IYRS-logo.jpg">
 		</div>
   </div>
 
@@ -79,6 +79,7 @@ var all = function all(selectors) {
 	return document.querySelectorAll(selectors);
 };
 
+var header = ("#header");
 var nav = select('nav');
 var links = Array.prototype.slice.call(all('.nav__page-link'));
 var bounds = nav.getBoundingClientRect();
@@ -91,6 +92,15 @@ var transforms = links.map(function (el) {
 		scale: rect.width / bounds.width
 	};
 });
+
+window.onscroll = function() {
+    var nav = document.getElementById('header');
+    if ( window.pageYOffset > 5 ) {
+        nav.classList.add("header-on-scroll");
+    } else {
+        nav.classList.remove("header-on-scroll");
+    }
+}
 
 var transform = function transform(index) {
 	return 'translateX(' + transforms[index].x + 
