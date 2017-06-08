@@ -51,15 +51,21 @@ var onMouseOver = function onMouseOver(evt) {
 	line.style.transform = transform(index);
 };
 
-// var onMouseExit  = function onMouseExit(evt) {
-// 	for (var i = 0; i < document.links.length; i++) {
-// 		if (document.links[i].href == document.URL) {
-// 			var home = links.indexOf(document.links[i].href);
-// 			line.style.transform = transform(home);
-// 			console.log(home);
-// 		}
-// 	}
-// }
+var toCurrent = function toCurrent(evt) {
+	for (var i = 0; i < document.links.length; i++) {
+    if (document.links[i].href == document.URL 
+					&& document.links[i].className != "site-title" ) {
+				var index = links.indexOf(document.links[i]);
+				line.style.transform = transform(index);
+    }
+		if (document.links[i].href == document.URL 
+					&& document.links[i].className == "site-title") {
+			var index = links.indexOf(document.links[1]);
+			line.style.transform = transform(index);
+		}
+	}
+};
+
 
 window.onload = function setActive(evt) {
 	for (var i = 0; i < document.links.length; i++) {
@@ -76,13 +82,15 @@ var init = function init() {
 	links.forEach(function (el) {
 		return el.addEventListener('mouseenter', onMouseOver);
 	});
-	// links.forEach(function (el) {
-	// 	return el.addEventListener('mouseleave', onMouseExit);
-	// });
+	nav.addEventListener('mouseleave', toCurrent);
 };
 
 init();
 
+
+
+
   </script>
 
 </footer>
+

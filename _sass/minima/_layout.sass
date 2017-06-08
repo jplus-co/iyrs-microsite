@@ -90,6 +90,9 @@
     padding: 30px 0
 
 // Site header
+.trigger
+  +grid-media($desktop)
+    margin-left: 200px
 .site-header
   position: fixed
   background-color: white
@@ -168,6 +171,7 @@ header
       text-decoration: none
       transition: color .2s ease-in-out
       color: red
+
 
   @include media-query($on-palm)
     position: absolute
