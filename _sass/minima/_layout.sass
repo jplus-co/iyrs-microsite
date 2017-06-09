@@ -111,20 +111,12 @@ a.btn:hover
   margin-top: 30px
 
 // Site header
-.trigger
-  +grid-media($desktop)
-    margin-left: 200px
 .site-header
-  position: fixed
+  min-height: 54px
+  padding: 0 40px
+  // Positioning context for the mobile navigation icon
+  position: relative
   background-color: white
-  z-index: 1
-  +grid-media($desktop)
-    min-height: 54px
-    padding: 0 40px
-    // Positioning context for the mobile navigation icon
-    position: fixed
-    background-color: white
-    z-index: 1
 
 .site-title
   @include relative-font-size(1.625)
@@ -133,84 +125,35 @@ a.btn:hover
   letter-spacing: -1px
   margin-bottom: 0
   float: left
-  width: 375px
-  position: absolute
-  background-color: white
-  +grid-media($desktop)
-    margin-right: -90px
-    width: 1920px
-
 
   &,
   &:visited
     color: $grey-color-dark
 
-.IYRS-link
-  +grid-media($desktop)
-    max-width: 100%
-    height: 35px
-    background-color: $light-gray
-    margin-left: 0px
-    float: none
-  &:hover
-    background-color: #ebf0f7
-
-.IYRS-link__text
-  +grid-media($desktop)
-    padding-left: 680px
-    padding-top: 7px
-    font-size: 13px
-    color: black
-    margin-right: 0
 
 header
   display: flex
   justify-content: space-between
   align-items: center
 
-.current-page-header_highlight
-  +grid-media($desktop)
-    color: #ff5555 !important
-    font-size: 14px
-    margin-right: 15px
-
-.header-on-scroll
-  top: 50px
-  +grid-media($desktop)
-    top: -1px
-
 .nav
-  margin-left: 300px
-  position: fixed
-  +grid-media($desktop)
-    line-height: $base-line-height * $base-font-size * 2.25
-    overflow: hidden
-    z-index: 1
-    
-.nav__width
-  +grid-media($desktop)
-    +grid-push(3)
-  +grid-media($extra-narrow-screen)
-    +grid-push(5)
-  +grid-media($transition-narrow-screen)
-    +grid-push(5.8)
-  +grid-media($narrow-screen)
-    +grid-push(6.5)
+  line-height: $base-line-height * $base-font-size * 2.25
+  position: relative
+  overflow: hidden
+  z-index: 100
 
   .line
-    display: none
-    +grid-media($desktop)
-      position: absolute
-      width: 100%
-      height: 3px
-      left: 0
-      right: 0
-      bottom: 0
-      background-color: #ff5555
-      transform-origin: left
-      transform: translateX(-100%)
-      transition: transform 0.8s $ease-out-quint
-      will-change: transform
+    position: absolute
+    width: 100%
+    height: 3px
+    left: 0
+    right: 0
+    bottom: 0
+    background-color: #ff5555
+    transform-origin: left
+    transform: translateX(-100%)
+    transition: transform 0.8s $ease-out-quint
+    will-change: transform
 
   .nav__trigger
     display: none
@@ -231,7 +174,6 @@ header
       text-decoration: none
       transition: color .2s ease-in-out
       color: red
-
 
   @include media-query($on-palm)
     position: absolute
@@ -265,7 +207,6 @@ header
     input ~ .trigger
       clear: both
       display: none
-      width: 150px
 
     input:checked ~ .trigger
       display: block
@@ -279,15 +220,36 @@ header
         margin-right: 0
         margin-left: 20px
 
-.page-link
-  +grid-media($desktop)
-    color: $text-color
-
 .btn__nav-apply
-  padding: 4px
+  padding: 5px 10px 5px 10px
+  margin-right: 10px
   +grid-media($desktop)
     display: inline
-    padding: 5px 26px 6px 26px
+    padding: 7px 30px
+    margin-right: 0
+
+.IYRS-link
+  +grid-media($desktop)
+    max-width: 100%
+    background-color: $light-gray
+    margin-left: 0px
+    float: none
+  &:hover
+    background-color: #ebf0f7
+
+.IYRS-link__text
+  +grid-media($desktop)
+    padding-left: 680px
+    padding-top: 7px
+    font-size: 13px
+    color: black
+    margin-right: 0
+
+.current-page-header_highlight
+  +grid-media($desktop)
+    color: #ff5555 !important
+    font-size: 14px
+    margin-right: 15px
 
 //Site footer
 
