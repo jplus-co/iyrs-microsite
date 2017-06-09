@@ -1,41 +1,95 @@
-// .hero
-//   /* Rectangle 10: */
-//   opacity: 0.68
-//   // background: url('./img/home-hero-bg.png')
-//   background-image: -webkit-linear-gradient(top left, #FFDE68 0%, #FF6868 100%)
-//   background-image: -o-linear-gradient(top left, #FFDE68 0%, #FF6868 100%)
-//   background-image: linear-gradient(to bottom right, #FFDE68 0%, #FF6868 100%)
-//   height: auto
-//   width: 100%
-//   z-index: 0
-
 
 .hero
-  width: 100%
-  background: url(../img/home-hero-bg.png) center center no-repeat
-  background-size: cover
-  position: relative
-
   &:before
     content: ''
     position: absolute
-    top: 0
+    top: 53px
     right: 0
     bottom: 0
     left: 0
+    height: 552px
     background-image: -webkit-linear-gradient(top left, #FFDE68 0%, #FF6868 100%)
     background-image: -o-linear-gradient(top left, #FFDE68 0%, #FF6868 100%)
     background-image: linear-gradient(to bottom right, #FFDE68 0%, #FF6868 100%)
-    opacity: .68
+    opacity: .6
+  &:after
+    content: ''
+    display: block
+    position: absolute
+    left: 0
+    top: 53px
+    width: 100%
+    height: 552px
+    background-image: url('../img/bg_mesh.png')
+
+.hero-video
+  /* Make video to at least 100% wide and tall */
+  min-width: 100%
+  min-height: 100%
+
+  /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+  width: auto
+  height: auto
+
+  /* Center the video */
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%,-50%)
+  -webkit-transform: translate(-50%,-50%)
+  -ms-transform: translate(-50%,-50%)
+  z-index: -1
+
+.hero-video__container
+  position: absolute
+  top: 53px
+  bottom: 0
+  width: 100%
+  height: 552px
+  overflow: hidden
+
+.hero-video__container::before
+  content: ''
+  position: absolute
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  height: 552px
+  background-image: -webkit-linear-gradient(top left, #FFDE68 0%, #FF6868 100%)
+  background-image: -o-linear-gradient(top left, #FFDE68 0%, #FF6868 100%)
+  background-image: linear-gradient(to bottom right, #FFDE68 0%, #FF6868 100%)
+  opacity: .6
+  z-index: 1
+.hero-video__container::after
+  content: ''
+  display: block
+  position: absolute
+  left: 0
+  top: 0
+  width: 100%
+  height: 552px
+  background-image: url('../img/bg_mesh.png')
+
+.hero__header-wrapper
+  display: -webkit-flex
+  display: flex
+  -webkit-flex-direction: row
+  flex-direction: row
+  -webkit-align-items: center
+  align-items: center
+  -webkit-justify-content: center
+  justify-content: center
+  height: 550px
 
 .hero__header-container
   +grid-column(12)
   position: relative
-  padding: 150px 0
+  flex: none
   z-index: 3
+  margin-left: 0
   +grid-media($desktop)
     +grid-column(8)
-    +grid-push(1)
 
 .dmf-logo
   +font-face($h3-family, 800, $h1-size)
@@ -63,17 +117,6 @@
     line-height: 130px
     letter-spacing: 2px
     z-index: 1
-
-.hero-video
-  position: absolute
-  height: 100%
-  width: 100%
-  z-index: 0
-.hero-video__container::after
-  content: ""
-  background-color: white
-  height: 200px
-  width: 100%
 
 .speaker-callout
   width: 100%
@@ -137,6 +180,7 @@
   +grid-column(10)
   +grid-media($desktop)
     +grid-column(5)
+    width: 33  0px
   ul
     list-style: none
     margin-bottom: 40px
@@ -195,7 +239,8 @@
   margin-left: 20px
   +grid-media($desktop)
     +grid-column(5)
-    +grid-push(2)
+    +grid-shift(2)
+    margin-left: 0
   & > span
     +font-face($neuziet, $bold, 18px)
     background-color: $yellow
@@ -246,7 +291,7 @@
     +font-face($h3-family, 800, 20px)
     order: 2
     +grid-media($desktop)
-      +grid-column(8)
+      +grid-column(7)
       +font-face($h3-family, 800, 28px)
       margin-top: 0px
       padding-top: 50px
@@ -354,6 +399,11 @@
 .build__header
   color: white
   +grid-media($desktop)
+    margin-top: 0
+
+.build__subtitle
+  +grid-media($desktop)
+    +grid-column(6)
 
 .build__subtitle > div
   color: white
@@ -363,18 +413,36 @@
   color: white
   +grid-media($desktop)
 
-//
-// .build__img
-//   overflow: visible
-//   margin-top: 20px
-//   z-index: 10
-//   +grid-media($desktop)
-//     +grid-column(8)
-//     +grid-shift(5)
-//     position: absolute
-//     margin-top: 0
-//     right: 0
-//     top: 80px
+.build__img-container
+  position: relative
+  max-width: 960px
+  height: 100%
+  margin-top: 20px
+  z-index: -1
+  order: 5
+
+.build__img
+  overflow: visible
+  position: relative
+  +grid-column(12)
+  +grid-media($desktop)
+    position: absolute
+    right: 0
+    top: 150px
+    +grid-column(6)
+
+  &:before
+    content: ""
+    position: absolute
+    width: 100%
+    height: 100%
+    transform: translate(4%, 6%)
+    border: 4px $cyan solid
+    +media-query-inbetween(767px, 474px)
+      width: 419px
+      height: 279px
+    +grid-media($desktop)
+      width: 93%
 
 .svg-wrapper
   width: 100%
@@ -505,20 +573,20 @@
     display: block
 
 .speaker-series__speaker:nth-child(1)
-  bottom: 5px
+  bottom: 80px
 .speaker-series__speaker:nth-child(2)
   right: 40px
-  top: -100px
+  top: -120px
   transform: translateY(-50%)
   +media-query-inbetween(1120px, 768px)
-    right: 60px
-  .speaker-name
-    width: 134px
+    right: 90px
 .speaker-series__speaker:nth-child(3)
-  top: 0
+  top: -50px
 .speaker-series__speaker:nth-child(4)
   top: 85px
   right: 40px
+  +media-query-inbetween(1120px, 768px)
+    right: 80px
 
 .speaker-name
   +font-face($neuziet, $bold, 18px)
@@ -537,7 +605,7 @@
   +grid-media($desktop)
     height: 191px
     width: 142px
-    
+
 img.speaker-img
   max-width: none !important
 
