@@ -72,14 +72,17 @@ subtitle: Explore the possibilities of the DM&F program
                       <div class="class-list__class-desc">To support students in the formation of career and employment related goals, each student undertakes a significant experiential learning opportunity with a company engaged in relevant processes and technologies. The externship represents an educational strategy that links classroom learning and student interest with the acquisition of experience in an applied work setting.</div>
                   </li>
               </ul>
-              <div class="curriculum__catalog">Get an in-depth look with our <a href="">Course Catalog</a>.</div>
-              <div class="curriculum__certification">Learn more about our <a href="">Program Certifications</a>.</div>
+              <div class="curriculum__catalog">Get an in-depth look with our <a target="_blank" href="{{base}}/docs/course-descriptons.pdf">Course Catalog</a>.</div>
           </div>
       </div>
       <!-- curriculum -->
 
       <div class="program-info">
-          <div class="sub-header-1">key dates</div>
+
+        <div id="tuition" class="sub-header-1">Tuition</div>
+        <p>Tuition including materials & shop fees = <b>$21,700</b></p>
+
+          <div id="key-dates" class="sub-header-1">key dates</div>
             <ul class="key-dates">
               <li><b>Classes begin: </b>September 5</li>
               <li><b>Session Term: </b>September 5, 2017 - May 18, 2018</li>
@@ -93,13 +96,12 @@ subtitle: Explore the possibilities of the DM&F program
               </div>
             </ul>
 
-          <div id="externship" class="sub-header-1">externship</div>
-          <p>The objectives of the course are to equip students to be proficient (to industry standard) in SolidWorks. Students will learn the SolidWorks interface, tool-set use and best practices. Students will learn the characteristics of the various file
-              formats in which 3D designs may be saved and will utilize a wide range of straightforward and “light-lift”</p>
 
-          <div id="capstone" class="sub-header-1">capstone</div>
-          <p>The objectives of the course are to equip students to be proficient (to industry standard) in SolidWorks. Students will learn the SolidWorks interface, tool-set use and best practices. Students will learn the characteristics of the various file
-              formats in which 3D designs may be saved and will utilize a wide range of straightforward and “light-lift”</p>
+          <div id="externship" class="sub-header-1">externship</div>
+          <p>Students embark on a significant experiential learning opportunity embedding with an industry partner for the final four weeks of the program. Externships are 100% off-campus in companies leveraging digital modeling and fabrication to drive their success. Students apply methodology, technology, and operational practices in real time while deepening their understanding of career prospects.</p>
+
+          <div id="capstone" class="sub-header-1">Prototyping Project</div>
+          <p>DM&F culminates with a capstone project that immerses students in the design process from ideation to iteration, with both individual and team-based project components. Students will project manage their vision end-to-end, bringing to life a three-dimensional object by their design.</p>
       </div>
       <!-- ext-cap (externship & capstone) -->
   </div>

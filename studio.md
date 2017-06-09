@@ -39,10 +39,7 @@ subtitle: With state of the art machines, build anything possible at the DM&F Bu
 		All the tools necessary for creation
 	</h1>
 	<p>
-		 This is a blurb talking about the experiential
-		 learning opportunities available with the IYRS
-		 learning model and how the DM&F program utilizes
-		 them to create an enriching student experience.
+Get your hands on the latest tools and technology to fabricate your designs. The IYRS learning experience is crystallized by the new Build Studio where our community is dedicated to dynamic solutions, resilient design, and creative application.
 	</p>
 	</div>
 </div>
