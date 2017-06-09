@@ -1,21 +1,74 @@
 <footer class="site-footer">
   <div class="grid-container">
-    <div class="footer__header">Have a question? Want to reach out? Drop us a line.</div>
+    <div class="footer__header">
+			Have a question? Want to reach out? Drop us a line.
+		</div>
     <div class="footer__form"></div>
     <div class="footer__nav">
+    <div class="footer__header">Curious about DM&F? Join our mailing list.</div>
+    <div class="footer__form">
+			<div class="ctct-embed-signup" 
+					 style="font: 16px Helvetica Neue, Arial, sans-serif; font: 1rem Helvetica Neue, Arial, sans-serif; line-height: 1.5; -webkit-font-smoothing: antialiased;">
+   		<div style="color:#5b5b5b ; border-radius:5px;">
+       <span id="success_message" style="display:none;">
+           <div style="text-align:center;">Thanks for signing up!</div>
+       </span>
+       <form data-id="embedded_signup:form" class=" Form" name="embedded_signup" method="POST" action="https://visitor2.constantcontact.com/api/signup">
+           <input data-id="ca:input" type="hidden" name="ca" value="fde1c80e-52e8-472b-a280-67914f82444b">
+           <input data-id="list:input" type="hidden" name="list" value="1301462494">
+           <input data-id="source:input" type="hidden" name="source" value="EFD">
+           <input data-id="required:input" type="hidden" name="required" value="list,email">
+           <input data-id="url:input" type="hidden" name="url" value="">
+					 <div class="grid-container">
+						<p data-id="Email Address:p" ><label data-id="Email Address:label" data-name="email" class="ctct-form-required"></label> 
+							<input data-id="Email Address:input" type="text" name="email" placeholder="yourfantasticemail@email.com" maxlength="80" class="email-input">
+							<button type="submit" class="Button signup-button Button--block Button-secondary" data-enabled="enabled">
+								<img class="signup-arrow" src="./img/signup-arrow.png"/>
+							</button>
+						</p>
+					 </div>
+           <div>
+						 <p class="ctct-form-footer footer__privacy-policy">
+							 By submitting this form, you are granting: IYRS School of Technology &amp; Trades, 449 Thames Street, 
+							 Newport, Rhode Island, 02840, United States, http://www.iyrs.edu permission to email you. You may 
+							 unsubscribe via the link found at the bottom of every email.  
+							 (See our <a href="http://www.constantcontact.com/legal/privacy-statement" target="_blank">Email Privacy Policy</a> 
+							 for details.) Emails are serviced by Constant Contact.
+							</p>
+					 </div>
+       </form>
+   </div>
+</div>
+		</div>
+    <div class="footer__nav grid-container">
       <ul>
-        <li><a href="/careers">Careers</a></li>
-        <li><a href="/curriculum">Curriculum</a></li>
-        <li><a href="/studio">Build Studio</a></li>
-        <li><a href="/summer-speakers">Summer Speakers</a></li>
+        <li><a class="footer__nav-item-color" href="/curriculum">Curriculum</a></li>
+        <li><a class="footer__nav-item-color" href="/studio">Build Studio</a></li>
+        <li><a class="footer__nav-item-color" href="/careers">Careers</a></li>
+        <li><a class="footer__nav-item-color" href="/request_visit">Schedule Visit</a></li>
       </ul>
     </div>
-    <div class="footer__iyrs-logo"></div>
+    <div class="footer__iyrs-logo">
+			<img src="./img/IYRS-logo.jpg">
+		</div>
   </div>
 
-
-
 <script type="text/javascript">
+
+var localizedErrMap = {};
+   localizedErrMap['required'] =         'This field is required.';
+   localizedErrMap['ca'] =             'An unexpected error occurred while attempting to send email.';
+   localizedErrMap['email'] =             'Please enter your email address in name@email.com format.';
+   localizedErrMap['birthday'] =         'Please enter birthday in MM/DD format.';
+   localizedErrMap['anniversary'] =     'Please enter anniversary in MM/DD/YYYY format.';
+   localizedErrMap['custom_date'] =     'Please enter this date in MM/DD/YYYY format.';
+   localizedErrMap['list'] =             'Please select at least one email list.';
+   localizedErrMap['generic'] =         'This field is invalid.';
+   localizedErrMap['shared'] =         'Sorry, we could not complete your sign-up. Please contact us to resolve this.';
+   localizedErrMap['state_mismatch'] = 'Mismatched State/Province and Country.';
+    localizedErrMap['state_province'] = 'Select a state/province';
+   localizedErrMap['selectcountry'] =     'Select a country';
+   var postURL = 'https://visitor2.constantcontact.com/api/signup';
 
 'use strict';
 
@@ -26,6 +79,7 @@ var all = function all(selectors) {
 	return document.querySelectorAll(selectors);
 };
 
+var header = ("#header");
 var nav = select('nav');
 var links = Array.prototype.slice.call(all('.nav__page-link'));
 var bounds = nav.getBoundingClientRect();
@@ -39,39 +93,63 @@ var transforms = links.map(function (el) {
 	};
 });
 
-var transform = function transform(index) {
-	return 'translateX(' + transforms[index].x + 'px) scaleX(' + transforms[index].scale + ')';
-};
-  console.log(transforms);
+window.onscroll = function() {
+    var nav = document.getElementById('header');
+    if ( window.pageYOffset > 5 ) {
+        nav.classList.add("header-on-scroll");
+    } else {
+        nav.classList.remove("header-on-scroll");
+    }
+}
 
+var transform = function transform(index) {
+	return 'translateX(' + transforms[index].x + 
+	'px) scaleX(' + transforms[index].scale + ')';
+};
 
 var onMouseOver = function onMouseOver(evt) {
+	line.style.display = "block";
 	var index = links.indexOf(evt.currentTarget);
 	line.style.transform = transform(index);
 };
 
 var toCurrent = function toCurrent(evt) {
-	var index = links.indexOf(select('[aria-current="page"]'));
-	line.style.transform = transform(index);
+	for (var i = 0; i < document.links.length; i++) {
+    if (document.links[i].href == document.URL 
+					&& document.links[i].className != "site-title" ) {
+				var index = links.indexOf(document.links[i]);
+				line.style.transform = transform(index);
+    }
+		if (document.links[i].href == document.URL 
+					&& document.links[i].className == "site-title") {
+				line.style.display = "none";
+		}
+	}
 };
 
-var setActive = function setActive(evt) {
-	select('[aria-current="page"]').removeAttribute('aria-current');
-	evt.currentTarget.setAttribute('aria-current', 'page');
+
+window.onload = function setActive(evt) {
+	for (var i = 0; i < document.links.length; i++) {
+    if (document.links[i].href == document.URL 
+					&& document.links[i].className != "site-title" ) {
+        document.links[i].className = "current-page-header_highlight";
+				var index = links.indexOf(document.links[i]);
+				line.style.transform = transform(index);
+    }
+	}
 };
 
 var init = function init() {
-	toCurrent();
 	links.forEach(function (el) {
 		return el.addEventListener('mouseenter', onMouseOver);
-	});
-	links.forEach(function (el) {
-		return el.addEventListener('click', setActive);
 	});
 	nav.addEventListener('mouseleave', toCurrent);
 };
 
 init();
+
   </script>
+	<script type='text/javascript' src='https://static.ctctcdn.com/h/contacts-embedded-signup-assets/1.0.2/js/signup-form.js'></script>
 
 </footer>
+

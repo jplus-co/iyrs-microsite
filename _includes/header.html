@@ -1,5 +1,8 @@
-<header class="site-header" role="banner">
-
+<div class="IYRS-link grid-container">
+  <a href="#"><p class="IYRS-link__text" href="iyrs.edu"> DM&F is a new program from IYRS. Wondering what IYRS is? Click here.</p></a>
+</div>
+<header class="site-header" role="banner" id="header">
+    
     {% assign default_paths = site.pages | map: "path" %}
     {% assign page_paths = site.header_pages | default: default_paths %}
     <a class="site-title" href="{{ "/" | relative_url }}">DM&F</a>
@@ -21,11 +24,16 @@
           {% for path in page_paths %}
             {% assign my_page = site.pages | where: "path", path | first %}
             {% if my_page.link-name %}
-            <a class="nav__page-link" href="{{ my_page.url | relative_url }}">{{ my_page.link-name | escape }}</a>
+            <a  class="nav__page-link" href="{{ my_page.url | relative_url }}">
+              {{ my_page.link-name | escape }}
+            </a>
             {% endif %}
           {% endfor %}
-          <a aria-current="page" class="nav__page-link" href="{{ my_page.url | relative_url }}">Request Visit</a>
-          <div class="btn btn__nav-apply"><a id="nav__apply" class="page-link" href="{{ my_page.url | relative_url }}">Apply</a></div>
+          
+            <a id="nav__apply" style="color: white ;" target="_blank" class="btn btn__nav-apply" href="https://iyrs.typeform.com/to/vNhdlS">
+              Apply
+            </a>
+          
           <div class="line"></div>
         </div>
       </nav>
