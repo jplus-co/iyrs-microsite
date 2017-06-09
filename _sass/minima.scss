@@ -82,6 +82,19 @@ $tablet: (
     media: 540px
 );
 
+$extra-narrow-screen: (
+    media: 1380px
+);
+
+$transition-narrow-screen: (
+    media: 1550px
+);
+
+$narrow-screen: (
+    media: 1780px
+);
+
+
 
 
 @mixin media-query($device) {

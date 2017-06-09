@@ -12,6 +12,16 @@
 .flex
   display: flex
   flex-direction: column
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  display: -webkit-flex 
+  display: -moz-box
+  display: -ms-flexbox
+  -webkit-box-orient: vertical
+  -webkit-box-direction: normal
+  -ms-flex-direction: column
+  flex-direction: column
   @include grid-media($desktop)
     display: block
 
@@ -124,12 +134,16 @@ a.btn:hover
   margin-bottom: 0
   float: left
   width: 375px
+  position: absolute
+  background-color: white
+  +grid-media($desktop)
+    margin-right: -90px
+    width: 1920px
+
 
   &,
   &:visited
     color: $grey-color-dark
-  +grid-media($desktop)
-    width: 1975px
 
 .IYRS-link
   +grid-media($desktop)
@@ -172,7 +186,16 @@ header
     line-height: $base-line-height * $base-font-size * 2.25
     overflow: hidden
     z-index: 1
-    margin-left: 1060px
+    
+.nav__width
+  +grid-media($desktop)
+    +grid-push(3)
+  +grid-media($extra-narrow-screen)
+    +grid-push(5)
+  +grid-media($transition-narrow-screen)
+    +grid-push(5.8)
+  +grid-media($narrow-screen)
+    +grid-push(6.5)
 
   .line
     display: none
@@ -272,6 +295,9 @@ header
   border-top: 1px solid $grey-color-light
   padding: $spacing-unit 0
   background-color: $light-gray
+  width: 375px
+  +grid-media($desktop)
+    width: 100%
 
 .footer__header
   +grid-column(12)
@@ -308,7 +334,7 @@ header
       margin-right: 0px
 
 .footer__iyrs-logo
-  margin-left: 175px
+  margin-left: 115px
   margin-top: 25px
   +grid-media($desktop)
     width: 75px
