@@ -94,6 +94,9 @@ var transforms = links.map(function (el) {
 });
 
 var transform = function transform(index) {
+	if (index == -1) {
+		return ;
+	}
 	return 'translateX(' + transforms[index].x + 
 	'px) scaleX(' + transforms[index].scale + ')';
 };
@@ -118,19 +121,6 @@ var toCurrent = function toCurrent(evt) {
 	}
 };
 
-
-window.onload = function setActive(evt) {
-	for (var i = 0; i < document.links.length; i++) {
-    if (document.links[i].href == document.URL 
-					&& document.links[i].className != "site-title" ) {
-        document.links[i].className = "current-page-header_highlight";
-				line.style.display = "block";
-				var index = links.indexOf(document.links[i]);
-				line.style.transform = transform(index);
-    }
-	}
-};
-
 window.onscroll = function() {
     var nav = document.getElementById('header');
     if ( window.pageYOffset > 5 ) {
@@ -150,7 +140,21 @@ var init = function init() {
 	nav.addEventListener('mouseleave', toCurrent);
 };
 
-init();
+
+window.onload = function setActive(evt) {
+	for (var i = 0; i < document.links.length; i++) {
+    if (document.links[i].href == document.URL 
+					&& document.links[i].className != "site-title" ) {
+        document.links[i].className = "current-page-header_highlight";
+				line.style.display = "block";
+				var index = links.indexOf(document.links[i]);
+				line.style.transform = transform(index);
+    }
+	}
+	init();
+};
+
+
 
   </script>
 	<script type='text/javascript' src='https://static.ctctcdn.com/h/contacts-embedded-signup-assets/1.0.2/js/signup-form.js'></script>
