@@ -3,7 +3,7 @@ layout: post
 title:  Hart marlow
 speech-title: "Digital: Design, Materials & Processes"
 date:   2017-05-15 14:14:19 -0400
-speech-date: August 19
+speech-date: August 19, 2017
 categories: speakers
 speaker-img: ../img/hart_marlow@2x.jpg
 speaker-img_home: ./img/hart_marlow@2x.jpg
