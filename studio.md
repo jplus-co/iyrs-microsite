@@ -5,35 +5,36 @@ link-name: Build Studio
 permalink: /studio/
 subtitle: With state of the art machines, build anything possible at the DM&F Build Studio.
 ---
+<div class="grid-container">
+	<div class="square-feet-section flex">
+		<img class="dot-bg" src="../img/dot-bg.png" />
 
-<div class="grid-container square-feet-section">
 	<p class="build-space-opening-date">
 		The build space is opening September 2017
 	</p>
 	<span class="machines-img">
 		<img  src="../img/11_machines.png" />
 	</span>
-	<img class="dot-bg" src="../img/dot-bg.png" />
-
-	<div class="square-feet-title">
-		<span class="square-feet-title__size">6,000</span><br>
-		<span>square feet</span>
-	</div>
-</div>
-
-<div class="grid-container machines-section">
 	<div class="machines-title">
-		<span class="machines_title__size">11</span><br>
+		<span class="machines_title--size">11</span><br>
 		<span>machines</span>
 	</div>
-	<div class="square-feet-img__spacing">
-		<span class="square-feet-img">
-			<img src="../img/6000_square_feet.png"/>
-		</span>
-	</div>
 </div>
 
-<div class="grid-container tools-for-creation">
+	<div class="machines-section flex">
+		<div class="square-feet-title">
+			<span class="square-feet-title--size">20,000</span><br>
+			<span>square feet</span>
+		</div>
+	<span class="square-feet-img">
+			<img src="../img/6000_square_feet.png"/>
+		</span>
+
+</div>
+</div>
+
+<div class="grid-container">
+	<div class="tools-for-creation">
 	<h1 class="tools-for-creation__title">
 		All the tools necessary for creation
 	</h1>
@@ -43,23 +44,23 @@ subtitle: With state of the art machines, build anything possible at the DM&F Bu
 		 learning model and how the DM&F program utilizes
 		 them to create an enriching student experience.
 	</p>
+	</div>
 </div>
 
-<div class="grid-container machine-options-section">
-	<img class="large_dot_bg" src="../img/large_dot_bg.png">
-	<div class="grid-container">
+<div class="machine-options-section">
+<div class="grid-container">
 		<div class="laser-cutter">
-			<img class="laser-cutter__fill" src="../img/laser-cutter-icon.svg" />
+			<img class="" src="../img/laser-cutter-icon.svg" />
 			<h4 class="machine__title">Laser cutters</h4>
 		</div>
 
 		<div class="CNC">
-			<img class="CNC__fill" src="../img/cnc-icon.svg" />
+			<img class="" src="../img/cnc-icon.svg" />
 			<h4 class="machine__title">CNC mills</h4>
 		</div>
 
 		<div class="ThreeD-printer">
-			<img class="ThreeD-printer__fill" src="../img/3d-printer-icon.svg" />
+			<img class="" src="../img/3d-printer-icon.svg" />
 			<h4 class="machine__title">3D printers</h4>
 		</div>
 	</div>
