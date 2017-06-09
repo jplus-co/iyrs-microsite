@@ -72,12 +72,14 @@ var localizedErrMap = {};
 
 'use strict';
 
+window.onload = function setActive(evt) {
 var select = function select(selector) {
 	return document.querySelector(selector);
 };
 var all = function all(selectors) {
 	return document.querySelectorAll(selectors);
 };
+
 
 var header = ("#header");
 var nav = select('nav');
@@ -141,7 +143,6 @@ var init = function init() {
 };
 
 
-window.onload = function setActive(evt) {
 	for (var i = 0; i < document.links.length; i++) {
     if (document.links[i].href == document.URL 
 					&& document.links[i].className != "site-title" ) {

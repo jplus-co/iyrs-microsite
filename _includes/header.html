@@ -5,10 +5,12 @@
     
     {% assign default_paths = site.pages | map: "path" %}
     {% assign page_paths = site.header_pages | default: default_paths %}
-    <a class="site-title" href="{{ "/" | relative_url }}">DM&F</a>
+    <a class="site-title" href="{{ "/" | relative_url }}">
+      <img src="/img/dmf-logo-nav.svg"/>
+    </a>
 
     {% if page_paths %}
-      <nav class="nav">
+      <nav class="nav nav__width">
         <input type="checkbox" id="nav__trigger" class="nav__trigger" />
         <label for="nav__trigger">
           <span class="nav__menu-icon">
