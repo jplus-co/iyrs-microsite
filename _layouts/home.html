@@ -2,19 +2,23 @@
 layout: default
 ---
 <section class="hero">
-    <!-- <div class="hero-video__container">
-        <video class="hero-video" muted autoplay loop>
-   <source src="./img/printer-video.mp4" type="video/mp4"/>
+    <div class="hero-video__container">
+        <video class="hero-video" muted autoplay loop poster="./img/hero-bg-img.jpg">
+   <source src="./img/home-header-video.mp4" type="video/mp4"/>
     Your browser does not support the video tag. I suggest you upgrade your browser.
   </video>
-    </div> -->
+    </div>
 
+  <div class="hero__header-wrapper">
     <div class="grid-container">
-        <div class="hero__header-container">
+        <div class="hero__header-wrapper">
+          <div class="hero__header-container">
             <div class="dmf-logo"><img src="./img/dmf-logo.svg" /></div>
-            <div class="hero__subtitle">Join the maker movement with IYRS’s Digital Modeling and Fabrication program located in Newport, Rhode Island.</div>
+            <div class="hero__subtitle">Join IYRS’ Digital Modeling and Fabrication program in its newest 20,000 sf facility on Newport’s historic harbor.</div>
+        </div>
         </div>
         <div class="hero__background-text">CALLING ALL MAKERS</div>
+    </div>
     </div>
 </section>
 
@@ -27,7 +31,7 @@ layout: default
     </div>
 </div>
 
-<div class="enroll-callout">Engage in IYRS’s unique learning model in experiential education</div>
+<div class="enroll-callout">Imagine a learning experience in which you can <span>make anything possible.</span></div>
 <section class="enroll-info grid-container">
     <div class="enroll-info__numbers">
         <ul>
@@ -35,32 +39,34 @@ layout: default
                 <div>program</div>
             </li>
             <li><span class="enroll-number">10</span>Classes</li>
-            <li><span class="enroll-number">01</span>Externship or
-                <div>Capstone project</div>
+            <li><span class="enroll-number">01</span>Industry immersive
+                <div>experience</div>
+            </li>
+            <li><span class="enroll-number">01</span>Prototyping project
             </li>
         </ul>
     </div>
     <div class="enroll-info__enroll-now">
         <span>ENROLLING NOW FOR <span>SEPTEMBER, 2017!</span></span>
-        <div>Receive your certification for digital modeling & fabrication.</div>
-        <a href="curriculum/">
+        <div>Earn your certification & advance your career or entrepreneurial aspirations.</div>
+        <a href="program/">
           <div class="btn enroll__btn">Enrollment information</div>
         </a>
     </div>
 </section>
 
+<div class="design-dot-bg"></div>
+
 <section class="design">
     <div class="grid-container flex">
         <div class="design__header">3D Design</div>
-        <div class="design__description">Learn the pricinciples of 3D design & product development. Understand how to develop a product that is functional, sustainable, and user focused.</div>
+        <div class="design__description">Apply the principles of 3D design and product development. Understand how to develop a functional, sustainable, and potentially marketable product.</div>
         <div class="design__subtitle">
-            <div class=""><span class="subtitle-number">01</span>Digital Design Technologies</div>
-            <div class=""><span class="subtitle-number">02</span>CNC Machining</div>
-            <div class=""><span class="subtitle-number">03</span>Addative Manufacturing</div>
+            <div class=""><span class="subtitle-number">01</span>Physical object design</div>
+            <div class=""><span class="subtitle-number">02</span>Product development cycle</div>
+            <div class=""><span class="subtitle-number">03</span>Additive manufacturing <span id="indent-scalability">scalability<span></div>
         </div>
-        <a href="curriculum/">
-            <div class="btn btn__design">View Curriculum</div>
-        </a>
+        <a href="program/"class="btn btn__design">View Curriculum</a>
         <img class="design__img" src="img/project-dev-cycle.svg" />
     </div>
 </section>
@@ -68,16 +74,20 @@ layout: default
 <section class="build edge--both">
     <div class="grid-container flex">
         <div class="build__header">Build</div>
-        <div class="build__description">Make anything possible with the additive and subtractive materials necessary for contemporary 3d design in our state-of-the-art Build Studio.</div>
+        <div class="build__description">With state of the art machines, build anything possible at the DM&F Build Studio.</div>
         <div class="build__subtitle">
             <div class=""><span class="subtitle-number">01</span>3D Printing</div>
             <div class=""><span class="subtitle-number">02</span>Laser Cutting</div>
             <div class=""><span class="subtitle-number">03</span>Vacuum Forming</div>
             <div class=""><span class="subtitle-number">04</span>Physical Computing</div>
         </div>
-        <a href="studio/">
-            <div class="btn btn__build">Our Build Studio</div>
-        </a>
+        <a class="btn btn__build" href="studio/">Our Build Studio</a>
+        <div class="build__img-container">
+          <picture class="build__img">
+              <source srcset="./img/build-img@2x.jpg 2x, ./img/build-img.jpg 1x" />
+              <img src="./img/build-img.jpg" alt="Student inspects a tool at the IYRS workshop" />
+          </picture>
+        </div>
     </div>
 </section>
 
@@ -99,7 +109,7 @@ layout: default
             </picture>
             <picture class="engage__img">
                 <source srcset="./img/engage-img-2@2x.jpg 2x, ./img/engage-img-2.jpg 1x" />
-                <img src="./img/engage-img-2.jpg" alt="Student inspects a tool at the IYRS workshop" />
+                <img src="./img/engage-img-2.jpg" alt="Students discuss digital modeling software in IYRS' Build Studio" />
             </picture>
         </div>
     </div>
@@ -130,27 +140,27 @@ layout: default
 <section class="cta">
     <div class="enroll-cta">
       <h3>Enrollment begins in September!</h3>
-      <div>View key dates and admissions information <a href="curriculum/">here</a>.</div>
+      <div>View key dates and admissions information <a href="program/">here</a>.</div>
     </div>
     <div class="grid-container">
         <div class="cta__container">
             <div class="cta__header sub-header-1">Learn More</div>
             <div class="cta__subtitle">Curious about DM&F? Learn more about the program.</div>
-            <a href="">
+            <a href="http://iyrs.edu/digital-modeling-fabrication-request-information/">
                 <div class="btn cta__btn">Request Viewbook</div>
             </a>
         </div>
         <div class="cta__container">
             <div class="cta__header">Visit IYRS</div>
             <div class="cta__subtitle">Visit our new building in beautiful Newport, RI.</div>
-            <a href="">
+            <a href="http://iyrs.edu/contact-us/visit-iyrs/request-digital-modeling-fabrication-visit-tour/">
                 <div class="btn cta__btn">Schedule a Visit</div>
             </a>
         </div>
         <div class="cta__container">
             <div class="cta__header">Apply Now!</div>
             <div class="cta__subtitle">Join our first inaugural DM&F class.</div>
-            <a href="">
+            <a href="https://iyrs.typeform.com/to/vNhdlS">
                 <div class="btn cta__btn">Apply</div>
             </a>
         </div>
