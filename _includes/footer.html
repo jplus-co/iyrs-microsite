@@ -43,9 +43,9 @@
     <div class="footer__nav grid-container">
       <ul>
         <li><a class="footer__nav-item-color" href="/curriculum">Curriculum</a></li>
-        <li><a class="footer__nav-item-color" href="/studio">Build Studio</a></li>
-        <li><a class="footer__nav-item-color" href="/careers">Careers</a></li>
-        <li><a class="footer__nav-item-color" href="/request_visit">Schedule Visit</a></li>
+        <li class="footer__mobile-CTA-space"><a class="footer__nav-item-color" href="/studio">Build Studio</a></li>
+        <li class="footer__mobile-CTA-space"><a class="footer__nav-item-color" href="/careers">Careers</a></li>
+        <li class="footer__mobile-CTA-space"><a class="footer__nav-item-color" href="/request_visit">Schedule Visit</a></li>
       </ul>
     </div>
     <div class="footer__iyrs-logo">
@@ -93,15 +93,6 @@ var transforms = links.map(function (el) {
 	};
 });
 
-window.onscroll = function() {
-    var nav = document.getElementById('header');
-    if ( window.pageYOffset > 5 ) {
-        nav.classList.add("header-on-scroll");
-    } else {
-        nav.classList.remove("header-on-scroll");
-    }
-}
-
 var transform = function transform(index) {
 	return 'translateX(' + transforms[index].x + 
 	'px) scaleX(' + transforms[index].scale + ')';
@@ -133,11 +124,24 @@ window.onload = function setActive(evt) {
     if (document.links[i].href == document.URL 
 					&& document.links[i].className != "site-title" ) {
         document.links[i].className = "current-page-header_highlight";
+				line.style.display = "block";
 				var index = links.indexOf(document.links[i]);
 				line.style.transform = transform(index);
     }
 	}
 };
+
+window.onscroll = function() {
+    var nav = document.getElementById('header');
+    if ( window.pageYOffset > 5 ) {
+        nav.classList.add("header-on-scroll");
+    } 
+		else {
+        nav.classList.remove("header-on-scroll");
+    }
+}
+
+
 
 var init = function init() {
 	links.forEach(function (el) {

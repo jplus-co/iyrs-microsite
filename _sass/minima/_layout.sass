@@ -157,7 +157,7 @@ header
   +grid-media($desktop)
     color: #ff5555 !important
     font-size: 14px
-    margin-right: 20px
+    margin-right: 0px
 
 .header-on-scroll
   top: 50px 
@@ -280,18 +280,35 @@ header
 
 .footer__nav-item-color
   color: black
+  
+.footer__mobile-CTA-space
+  padding-left: 20px
+  +grid-media($desktop)
+    padding-left: 0px
 
 .footer__nav
-  +grid-media($desktop)
-    +grid-shift(-.25)
-    margin-top: 10px
+  font-size: 13px
+  +grid-shift(.15)
   ul
     list-style: none
-  ul li
+  ul li 
+    +grid-push(2)
     +grid-column(2)
-    +grid-push(1)
+    margin-right: 15px
+  +grid-media($desktop)
+    font-size: 16px
+    +grid-shift(-.25)
+    margin-top: 10px
+    ul
+      list-style: none
+    ul li
+      +grid-column(2)
+      +grid-push(1)
+      margin-right: 0px
 
 .footer__iyrs-logo
+  margin-left: 175px
+  margin-top: 25px
   +grid-media($desktop)
     width: 75px
     height: 25px
@@ -300,6 +317,9 @@ header
     background-color: #E8EEEE
 
 .email-input
+  width: 200px
+  margin-left: 50px
+  margin-top: 15px
   +grid-media($desktop)
     background-color: #E8EEEE
     border: 0px solid black
@@ -312,6 +332,7 @@ header
     +grid-push(1.5)
 
 .signup-arrow
+  width: 40px
   +grid-media($desktop)
     width: 20px
     height: 10px
@@ -324,6 +345,10 @@ header
     +grid-column(1)
 
 .footer__privacy-policy
+  font-size: 10px
+  width: 300px
+  margin-left: 35px
+  text-align: center
   +grid-media($desktop)
     font-size: 10px
     width: 600px
