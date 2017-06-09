@@ -11,7 +11,7 @@
 .info-title
   +font-face($h3-family, 800, $h3-size)
 
-.info-link
+.speaker-calendar-link
   +grid-column(10)
   +grid-push(1)
   margin-top: 30px
@@ -21,13 +21,24 @@
     +grid-push(0)
     +font-face($h3-family, 800, 15px)
 
+.speaker-calendar-link:hover .triangle-right
+  margin-left: 20px
+  transition: .2s all $ease-out-quint
+
+
+.speaker-calendar
+
 .triangle-right
-  width: 20px
-  height: 20px
-  margin-left: 10px
+  width: 12px
+  height: 15px
+  margin-left: 0px
   +grid-media($desktop)
-    width: 15px
-    height: 20px
+    width: 10px
+    height: 13px
+    margin-left: 0
+    padding-bottom: 2px
+    transition: .2s all $ease-out-quint
+  &:hover
     margin-left: 20px
 
 //Speaker Section
@@ -35,30 +46,19 @@
   margin-top: 80px
 
 .speaker-section__title
+  +font-face($h3-family, $bold, 30px)
   +grid-column(12)
-  font-size: 30px
   +grid-media($desktop)
-    +font-face($h3-family, 800, 35px)
-    +grid-push(0)
+    font-size: 35px
 
-.speaker-name-spacing
-  margin-top: 15px
-  max-width: 200px
-  +grid-media($desktop)
-    margin-top: 20px
-    margin-bottom: 0px
-    font-weight: bold
-    font-size: 15px
-
-.speaker-images
-  +grid-column(12)
-  +grid-push(3)
+.speaker-section__speakers
+  +grid-column(6)
   margin-bottom: 55px
   margin-top: 20px
   +grid-media($desktop)
     margin-top: 50px
     +grid-column(3)
-.speaker-images::before
+.speaker-section__speakers::before
   content: ""
   position: absolute
   border: 4px $yellow solid
@@ -72,19 +72,47 @@
     z-index: -1
     transform: translate(10px, 10px)
 
-.speaker-images__size
+.speaker-section__speakers__img
   width: 142px
   height: 191px
   +grid-media($desktop)
     width: 142px
     height: 191px
 
+.speaker-section__speakers__name
+  +font-face($h3-family, $bold, 16px)
+  margin-top: 15px
+  margin-bottom: 0
+  max-width: 155px
+  +grid-media($desktop)
+    margin-top: 20px
+    margin-bottom: 0px
+    font-size: 15px
+
+.speaker-section__speakers__date
+  font-weight: 400i
+
 .speeches-block
   +grid-column(12)
   margin-bottom: 25px
+  color: $dark-navy
   +grid-media($desktop)
-    +grid-column(6)
+    +grid-column(8)
     margin-bottom: 100px
+
+.speeches-block__speech-title
+  +font-face($neuziet, $bold, 28px)
+
+.speeches-block__speaker-name
+  +font-face($roboto-mono, $bold, 20px)
+  margin-bottom: 0
+
+
+.speeches-block__date
+  +font-face($roboto-mono, 400i, 16px)
+  font-style: italic
+
+.speeches-block__desc
 
 .speeches-button
   +grid-media($desktop)
