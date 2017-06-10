@@ -184,7 +184,7 @@
 
 .enroll-info__numbers
   color: white
-  +grid-column(10)
+  +grid-column(12)
   +grid-media($desktop)
     +grid-column(5)
     width: 33  0px
@@ -581,17 +581,17 @@
     display: block
 
 .speaker-series__speaker:nth-child(1)
-  bottom: 80px
+  bottom: 150px
 .speaker-series__speaker:nth-child(2)
   right: 40px
-  top: -120px
+  top: -80px
   transform: translateY(-50%)
   +media-query-inbetween(1120px, 768px)
     right: 90px
 .speaker-series__speaker:nth-child(3)
-  top: -50px
+  top: 0px
 .speaker-series__speaker:nth-child(4)
-  top: 85px
+  top: 135px
   right: 40px
   +media-query-inbetween(1120px, 768px)
     right: 80px
@@ -613,6 +613,9 @@
   +grid-media($desktop)
     height: 191px
     width: 142px
+  +media-query-inbetween(1120px, 768px)
+    height: 153px
+    width: 115px
 
 img.speaker-img
   max-width: none !important
@@ -633,7 +636,9 @@ img.speaker-img
     width: 115px
 
 .cta
-  margin: 200px 0 100px 0
+  margin: 100px 0 100px 0
+  +grid-media($desktop)
+    margin: 200px 0 100px 0
 
 .enroll-cta
   margin-bottom: 40px

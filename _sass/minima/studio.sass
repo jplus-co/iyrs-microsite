@@ -6,7 +6,6 @@
 
 .square-feet-img
 	+grid-column(12)
-	margin-left: 0px
 	position: relative
 	z-index: 0
 	order: 2
@@ -20,9 +19,9 @@
 .square-feet-img::before
 	content: ""
 	position: absolute
-	border: 2px $cyan solid
+	border: 3px $cyan solid
 	height: 240px
-	width: 340px
+	width: 300px
 	transform: translate(30px, 0px)
 	+grid-media($desktop)
 		border: 3px $cyan solid
@@ -109,7 +108,6 @@
 
 .machines-img
 	+grid-column(12)
-	margin-left: 0px
 	z-index: 0
 	order: 1
 	+grid-media($desktop)
@@ -122,8 +120,8 @@
 	content: ""
 	position: absolute
 	border: 3px $cyan solid
-	height: 375px
-	width: 360px
+	height: 345px
+	width: 330px
 	transform: translate(20px, 12px)
 	+grid-media($desktop)
 		border: 3px $cyan solid
@@ -191,7 +189,7 @@
 //tools creation
 .tools-for-creation
 	+grid-column(12)
-	margin-top: 50px
+	margin-top: 80px
 	margin-bottom: 50px
 	+grid-media($desktop)
 		+grid-column(8)
@@ -199,7 +197,8 @@
 		margin-top: 200px
 
 .tools-for-creation__title
-	+font-face($neuziet, $h3-weight, 36px)
+	+font-face($neuziet, $bold, 36px)
+	line-height: 38px
 	+grid-media($desktop)
 		+font-face($neuziet, $h3-weight, 36px)
 

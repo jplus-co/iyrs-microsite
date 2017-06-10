@@ -1,11 +1,12 @@
 ---
 layout: post
-title:  Nathalie Miebach
-speech-title: Tradition in Contemporary Design
+title:  Hart marlow
+speech-title: "Digital: Design, Materials & Processes"
 date:   2017-05-15 14:14:19 -0400
 speech-date: July 29, 2017
 categories: speakers
-speaker-img: ../img/nathalie_miebach@2x.jpg
-speaker-img_home: ./img/nathalie_miebach@2x.jpg
+speaker-img: ../img/hart_marlow@2x.jpg
+speaker-img_home: ./img/hart_marlow@2x.jpg
+event-link: http://iyrs.edu/event/hart-marlow-digital-design-materials-processes/
 ---
-Focuses on how traditional tools, methods and technology are utilized resource in contemporary design. Miebach will discuss how tradition and technology mix into a questioning and conceptual partnership with in her sculptural work. And her believe in the importance of combining the long-establish hand build technique with today’s computer enhanced data collection and music generation.
+Traditional tools, methods and technology are utilized as resources in contemporary design. Miebach will discuss how tradition and technology mix into a questioning and conceptual partnership within her sculptural work. And, her belief in the importance of combining the long-established, hand-build techniques with today’s computer-enhanced data collection and music generation.

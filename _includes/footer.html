@@ -1,3 +1,4 @@
+{% include base.html %}
 <footer class="site-footer">
   <div class="grid-container">
     <div class="footer__header">
@@ -7,7 +8,7 @@
     <div class="footer__nav">
     <div class="footer__header">Curious about DM&F? Join our mailing list.</div>
     <div class="footer__form">
-			<div class="ctct-embed-signup" 
+			<div class="ctct-embed-signup"
 					 style="font: 16px Helvetica Neue, Arial, sans-serif; font: 1rem Helvetica Neue, Arial, sans-serif; line-height: 1.5; -webkit-font-smoothing: antialiased;">
    		<div style="color:#5b5b5b ; border-radius:5px;">
        <span id="success_message" style="display:none;">
@@ -20,7 +21,7 @@
            <input data-id="required:input" type="hidden" name="required" value="list,email">
            <input data-id="url:input" type="hidden" name="url" value="">
 					 <div class="grid-container">
-						<p data-id="Email Address:p" ><label data-id="Email Address:label" data-name="email" class="ctct-form-required"></label> 
+						<p data-id="Email Address:p" ><label data-id="Email Address:label" data-name="email" class="ctct-form-required"></label>
 							<input data-id="Email Address:input" type="text" name="email" placeholder="yourfantasticemail@email.com" maxlength="80" class="email-input">
 							<button type="submit" class="Button signup-button Button--block Button-secondary" data-enabled="enabled">
 								<img class="signup-arrow" src="./img/signup-arrow.png"/>
@@ -29,10 +30,10 @@
 					 </div>
            <div>
 						 <p class="ctct-form-footer footer__privacy-policy">
-							 By submitting this form, you are granting: IYRS School of Technology &amp; Trades, 449 Thames Street, 
-							 Newport, Rhode Island, 02840, United States, http://www.iyrs.edu permission to email you. You may 
-							 unsubscribe via the link found at the bottom of every email.  
-							 (See our <a href="http://www.constantcontact.com/legal/privacy-statement" target="_blank">Email Privacy Policy</a> 
+							 By submitting this form, you are granting: IYRS School of Technology &amp; Trades, 449 Thames Street,
+							 Newport, Rhode Island, 02840, United States, http://www.iyrs.edu permission to email you. You may
+							 unsubscribe via the link found at the bottom of every email.
+							 (See our <a href="http://www.constantcontact.com/legal/privacy-statement" target="_blank">Email Privacy Policy</a>
 							 for details.) Emails are serviced by Constant Contact.
 							</p>
 					 </div>
@@ -49,7 +50,7 @@
       </ul>
     </div>
     <div class="footer__iyrs-logo">
-			<img src="./img/IYRS-logo.jpg">
+			<img src="{{base}}/img/IYRS-logo.jpg">
 		</div>
   </div>
 
@@ -99,7 +100,7 @@ var transform = function transform(index) {
 	if (index == -1) {
 		return ;
 	}
-	return 'translateX(' + transforms[index].x + 
+	return 'translateX(' + transforms[index].x +
 	'px) scaleX(' + transforms[index].scale + ')';
 };
 
@@ -111,12 +112,12 @@ var onMouseOver = function onMouseOver(evt) {
 
 var toCurrent = function toCurrent(evt) {
 	for (var i = 0; i < document.links.length; i++) {
-    if (document.links[i].href == document.URL 
+    if (document.links[i].href == document.URL
 					&& document.links[i].className != "site-title" ) {
 				var index = links.indexOf(document.links[i]);
 				line.style.transform = transform(index);
     }
-		if (document.links[i].href == document.URL 
+		if (document.links[i].href == document.URL
 					&& document.links[i].className == "site-title") {
 				line.style.display = "none";
 		}
@@ -127,7 +128,7 @@ window.onscroll = function() {
     var nav = document.getElementById('header');
     if ( window.pageYOffset > 5 ) {
         nav.classList.add("header-on-scroll");
-    } 
+    }
 		else {
         nav.classList.remove("header-on-scroll");
     }
@@ -144,7 +145,7 @@ var init = function init() {
 
 
 	for (var i = 0; i < document.links.length; i++) {
-    if (document.links[i].href == document.URL 
+    if (document.links[i].href == document.URL
 					&& document.links[i].className != "site-title" ) {
         document.links[i].className = "current-page-header_highlight";
 				line.style.display = "block";
@@ -161,4 +162,3 @@ var init = function init() {
 	<script type='text/javascript' src='https://static.ctctcdn.com/h/contacts-embedded-signup-assets/1.0.2/js/signup-form.js'></script>
 
 </footer>
-

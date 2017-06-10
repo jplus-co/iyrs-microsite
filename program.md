@@ -89,12 +89,11 @@ subtitle: Explore the possibilities of the DM&F program
               <li><b>Winter Vacation: </b>December 23, 2017 - January 5, 2018</li>
               <li><b>Externship: </b>April 23, 2018 - May 18, 2018</li>
               <li><b>Graduation: </b>June 2, 2018</li>
-
-              <div class="key-dates__admissions">
-                <div><b>Note: </b>IYRS <i>does not have a set deadline</i> for applications to be considered for spring or fall enrollment. Our admissions committee reviews applications on a rolling basis as they are completed and submitted.</div>
-                <div class="key-dates__application-process">Learn more about our <a href="http://iyrs.edu/application-process/admissions-schedule/">admissions process</a>.</div>
-              </div>
             </ul>
+            <div class="key-dates__admissions">
+              <div><b>Note: </b>IYRS <i>does not have a set deadline</i> for applications to be considered for spring or fall enrollment. Our admissions committee reviews applications on a rolling basis as they are completed and submitted.</div>
+              <div class="key-dates__application-process">Learn more about our <a href="http://iyrs.edu/application-process/admissions-schedule/">admissions process</a>.</div>
+            </div>
 
 
           <div id="externship" class="sub-header-1">externship</div>

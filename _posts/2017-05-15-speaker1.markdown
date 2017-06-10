@@ -7,6 +7,7 @@ speech-date: July 22, 2017
 categories: speakers
 speaker-img: ../img/philippa_mothersill@2x.jpg
 speaker-img_home: ./img/philippa_mothersill@2x.jpg
+event-link: http://iyrs.edu/event/philippa-mothersill-digital-enabled-creativity/
 ---
 
-Focuses on nascent and contemporary tools, methods and technologies that are being used to spark ideas and solutions in physical objects. Mothersill will discuss how through her exploration into theoretical and computational devices of design, she creates technology that inspires us all via our inherent understanding of “a language of form”.
+Nascent and contemporary tools, methods, and technologies are being used to spark ideas and solutions in physical objects. Mothersill will discuss how, through her exploration into theoretical and computational devices of design, she creates technology that inspires us all via our inherent understanding of “a language of form.”
