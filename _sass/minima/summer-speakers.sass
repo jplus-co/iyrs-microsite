@@ -1,7 +1,7 @@
 .info-container
   & > div:nth-child(1)
     margin-top: 100px
-    +grid-push(1)
+    +grid-column(12)
     +grid-media($desktop)
       +grid-column(8)
       margin-top: 100px
@@ -19,9 +19,6 @@
 .speaker-calendar-link:hover .triangle-right
   margin-left: 20px
   transition: .2s all $ease-out-quint
-
-
-.speaker-calendar
 
 .triangle-right
   width: 12px

@@ -7,7 +7,8 @@ subtitle: June through September, 2017
 ---
 
 <div class="info-container grid-container">
-  <div class="page__intro-text">Design and technology intersect unconventionally to inspire discovery, innovation, and creativity. Explore this space through four exceptional guest speaker engagements during the summer speaker series at IYRS. Organized in coordination with the new Digital Modeling & Fabrication program at IYRS, the speaker series is free and open to the public.</div>
+  <div class="page__intro-text">Design and technology intersect unconventionally to inspire discovery, innovation, and creativity. Explore this space through four exceptional guest speaker engagements
+during the summer speaker series at IYRS. Organized in coordination with the new Digital Modeling & Fabrication program at IYRS, the speaker series is free and open to the public.</div>
 		<!-- <div class="speaker-calendar-link">
 				<a class="" href="">View full workshop & speaker calendar
 					<img class="triangle-right" src="../img/triangle.png" />
@@ -18,7 +19,7 @@ subtitle: June through September, 2017
 <div class="speaker-section grid-container ">
   <div class="speaker-section__title"> Our Speakers </div>
 
-<div>
+<div class="grid-container">
   {% for post in site.categories.speakers reversed %}
   <div class="speaker-section__speakers">
     <img class ="speaker-section__speakers__img" src="{{ post.speaker-img }}"/>
