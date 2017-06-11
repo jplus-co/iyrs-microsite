@@ -184,6 +184,7 @@ header
     border: 1px solid $grey-color-light
     border-radius: 5px
     text-align: right
+    width: 50%
 
     label[for="nav__trigger"]
       display: block
@@ -192,6 +193,9 @@ header
       height: 36px
       z-index: 2
       cursor: pointer
+
+    .line
+      display: none
 
     .nav__menu-icon
       display: block
@@ -238,6 +242,7 @@ header
     float: none
     padding-left: none
     font-size: inherit
+    height: 35px
   &:hover
     background-color: #ebf0f7
 
@@ -261,7 +266,7 @@ header
   border-top: 1px solid $grey-color-light
   padding: $spacing-unit 0
   background-color: $light-gray
-  width: 375px
+  width: 100%
   +grid-media($desktop)
     width: 100%
 
