@@ -7,5 +7,6 @@ speech-date: June 24, 2017
 categories: speakers
 speaker-img: ../img/chad_phillips@2x.jpg
 speaker-img_home: ./img/chad_phillips@2x.jpg
+event-link: http://iyrs.edu/event/chad-phillips-entrepreneurialism-design/
 ---
-Focuses on how digital design tools and an artistic spirit combined to express ideas and objects that create value. Phillips will discuss his unique, hugely successful approach to Creative Direction and Design Curation, how why he believes design is critical in life and the art of finding and marketing design talent.
+Digital design tools and an artistic spirit combine to express ideas and objects that create value. Phillips will discuss his unique, hugely successful approach to Creative Direction and Design Curation; how and why he believes design is critical in life and the art of finding and marketing design talent.

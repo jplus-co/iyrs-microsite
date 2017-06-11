@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  Hart marlow
-speech-title: "Digital: Design, Materials & Processes"
+title: Tradition in Contemporary Design
+speech-title: Nathalie Miebach
 date:   2017-05-15 14:14:19 -0400
-speech-date: August 19, 2017
+speech-date: August 5, 2017
 categories: speakers
-speaker-img: ../img/hart_marlow@2x.jpg
-speaker-img_home: ./img/hart_marlow@2x.jpg
+speaker-img: ../img/nathalie_miebach@2x.jpg
+speaker-img_home: ./img/nathalie_miebach@2x.jpg
 ---
-Focuses on a wide range contemporary materials and technologies that are available to today’s designers. Marlow will discuss his use digital technologies and custom software to design with a particular focus on pushing the boundaries of materials. Why he chooses one material over another, based on what the materials means for him, conceptually, physicality, and structurally, etc.
+A wide range of contemporary materials and technologies are available to today’s designers. Marlow will discuss his use of digital technologies and custom software to design with a particular focus on pushing the boundaries of materials. He will also explore why he chooses one material over another, based on what the materials means for him, conceptually, physicality, and structurally.

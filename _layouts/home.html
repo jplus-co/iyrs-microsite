@@ -3,9 +3,9 @@ layout: default
 ---
 <section class="hero">
     <div class="hero-video__container">
-        <video class="hero-video" muted autoplay loop poster="./img/hero-bg-img.jpg">
-   <source src="./img/home-header-video.mp4" type="video/mp4"/>
-    Your browser does not support the video tag. I suggest you upgrade your browser.
+        <video class="hero-video" muted autoplay loop poster="{{base}}/img/hero-bg-img.jpg">
+   <source src="{{base}}/img/home-header-video.mp4" type="video/mp4"/>
+    Your browser does not support the video tag. You should upgrade your browser!
   </video>
     </div>
 
@@ -13,7 +13,7 @@ layout: default
     <div class="grid-container">
         <div class="hero__header-wrapper">
           <div class="hero__header-container">
-            <div class="dmf-logo"><img src="./img/dmf-logo.svg" /></div>
+            <div class="dmf-logo"><img src="{{base}}/img/dmf-logo.svg" /></div>
             <div class="hero__subtitle">Join IYRS’ Digital Modeling and Fabrication program in its newest 20,000 sf facility on Newport’s historic harbor.</div>
         </div>
         </div>
@@ -25,7 +25,7 @@ layout: default
 <div class="speaker-callout">
     <div class="grid-container">
         <div class="speaker-callout__text"> Join us this summer for our free summer speaker series. </div>
-        <a href="speaker-series/">
+        <a href="{{base}}/speaker-series/">
             <a href="summer-speakers/" class="btn btn__speaker-callout">Learn More</a>
         </a>
     </div>
@@ -49,7 +49,7 @@ layout: default
     <div class="enroll-info__enroll-now">
         <span>ENROLLING NOW FOR <span>SEPTEMBER, 2017!</span></span>
         <div>Earn your certification & advance your career or entrepreneurial aspirations.</div>
-        <a href="program/">
+        <a href="{{base}}/program/">
           <div class="btn enroll__btn">Enrollment information</div>
         </a>
     </div>
@@ -66,8 +66,8 @@ layout: default
             <div class=""><span class="subtitle-number">02</span>Product development cycle</div>
             <div class=""><span class="subtitle-number">03</span>Additive manufacturing <span id="indent-scalability">scalability<span></div>
         </div>
-        <a href="program/"class="btn btn__design">View Curriculum</a>
-        <img class="design__img" src="img/project-dev-cycle.svg" />
+        <a href="{{base}}/program/"class="btn btn__design">View Curriculum</a>
+        <img class="design__img" src="{{base}}/img/project-dev-cycle.svg" />
     </div>
 </section>
 
@@ -81,11 +81,11 @@ layout: default
             <div class=""><span class="subtitle-number">03</span>Vacuum Forming</div>
             <div class=""><span class="subtitle-number">04</span>Physical Computing</div>
         </div>
-        <a class="btn btn__build" href="studio/">Our Build Studio</a>
+        <a class="btn btn__build" href="{{base}}/studio/">Our Build Studio</a>
         <div class="build__img-container">
           <picture class="build__img">
-              <source srcset="./img/build-img@2x.jpg 2x, ./img/build-img.jpg 1x" />
-              <img src="./img/build-img.jpg" alt="Student inspects a tool at the IYRS workshop" />
+              <source srcset="{{base}}/img/build-img@2x.jpg 2x, {{base}}/img/build-img.jpg 1x" />
+              <img src="{{base}}/img/build-img.jpg" alt="Student inspects a tool at the IYRS workshop" />
           </picture>
         </div>
     </div>
@@ -101,19 +101,19 @@ layout: default
             <div class=""><span class="subtitle-number">03</span>Testing</div>
             <div class=""><span class="subtitle-number">04</span>Analyzing</div>
         </div>
-        <a class="btn btn__engage" href="careers/">Careers</a>
+        <a class="btn btn__engage" href="{{base}}/careers/">Careers</a>
         <div class="engage__img-container">
             <picture class="engage__img">
-                <source srcset="./img/engage-img-1@2x.jpg 2x, ./img/engage-img-1.jpg 1x" />
-                <img src="./img/engage-img-1.jpg" alt="Students collaborate on a team at IYRS" />
+                <source srcset="{{base}}/img/engage-img-1@2x.jpg 2x, {{base}}/img/engage-img-1.jpg 1x" />
+                <img src="{{base}}/img/engage-img-1.jpg" alt="Students collaborate on a team at IYRS" />
             </picture>
             <picture class="engage__img">
-                <source srcset="./img/engage-img-2@2x.jpg 2x, ./img/engage-img-2.jpg 1x" />
-                <img src="./img/engage-img-2.jpg" alt="Students discuss digital modeling software in IYRS' Build Studio" />
+                <source srcset="{{base}}/img/engage-img-2@2x.jpg 2x, {{base}}/img/engage-img-2.jpg 1x" />
+                <img src="{{base}}/img/engage-img-2.jpg" alt="Students discuss digital modeling software in IYRS' Build Studio" />
             </picture>
         </div>
     </div>
-    <img class="engage__dot-bg" src="./img/dot-bg.svg" />
+    <img class="engage__dot-bg" src="{{base}}/img/dot-bg.svg" />
 </section>
 
 <section class="speaker-series">
@@ -121,7 +121,7 @@ layout: default
         <div class="speaker-series__title-container">
             <div class="speaker-series__title">Summer Speakers Series</div>
             <div class="speaker-series__subtitle">Join us this summer as we explore various topics on 3D technology, business, and contemporary practices in the realm of design & fabrication. </div>
-            <a href="summer-speakers/">
+            <a href="{{base}}/summer-speakers/">
                 <div class="btn btn__speaker-series">Speaker Schedule</div>
             </a>
         </div>
@@ -140,7 +140,7 @@ layout: default
 <section class="cta">
     <div class="enroll-cta">
       <h3>Enrollment begins in September!</h3>
-      <div>View key dates and admissions information <a href="program/">here</a>.</div>
+      <div>View key dates and admissions information <a href="{{base}}/program/">here</a>.</div>
     </div>
     <div class="grid-container">
         <div class="cta__container">
@@ -153,14 +153,14 @@ layout: default
         <div class="cta__container">
             <div class="cta__header">Visit IYRS</div>
             <div class="cta__subtitle">Visit our new building in beautiful Newport, RI.</div>
-            <a href="http://iyrs.edu/contact-us/visit-iyrs/request-digital-modeling-fabrication-visit-tour/">
+            <a href="{% include visit-link.html %}">
                 <div class="btn cta__btn">Schedule a Visit</div>
             </a>
         </div>
         <div class="cta__container">
             <div class="cta__header">Apply Now!</div>
             <div class="cta__subtitle">Join our first inaugural DM&F class.</div>
-            <a href="https://iyrs.typeform.com/to/vNhdlS">
+            <a href="{% include apply-link.html %}">
                 <div class="btn cta__btn">Apply</div>
             </a>
         </div>
