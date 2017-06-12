@@ -87,9 +87,17 @@
 
 #externship
   margin-top: 60px
+  +grid-column(12)
+  +grid-media($desktop)
+    +grid-column(12)
+    margin-left: 0px
 
 #capstone
   margin-top: 40px
+  +grid-column(12)
+  +grid-media($desktop)
+    +grid-column(12)
+    margin-left: 0px
 
 .curriculum__dot-bg
   height: 390px
@@ -98,7 +106,7 @@
   position: absolute
   bottom: 0
   z-index: -1
-  background: url(./img/bg_dots-half@2x.png)
+  background: url(../img/bg_dots-half@2x.png)
   background-size: contain
   background-repeat: repeat-x
   display: inline-block
