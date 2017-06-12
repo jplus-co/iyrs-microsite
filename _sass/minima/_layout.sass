@@ -1,6 +1,3 @@
-
-
-
 // Main styles for the grid system
 .grid-container
   @include grid-container
@@ -123,7 +120,16 @@ a.btn:hover
   letter-spacing: -1px
   margin-bottom: 0
   float: left
-
+  background: url('../img/dmf-logo-nav.svg')
+  height: 27px
+  width: 103px
+  background-size: cover
+  //
+  // &:hover
+  //   background: url('../img/dmf-logo.gif')
+  //   height: 27px
+  //   width: 103px
+  //   background-size: cover
   &,
   &:visited
     color: $grey-color-dark
@@ -307,6 +313,7 @@ header
       margin-right: 0px
 
 .footer__iyrs-logo
+  display: block
   margin-left: 115px
   margin-top: 25px
   +grid-media($desktop)
@@ -332,10 +339,16 @@ header
     +grid-push(1.5)
 
 .signup-arrow
+  cursor: pointer
   width: 40px
   +grid-media($desktop)
     width: 20px
     height: 10px
+    transition: .2s all ease
+    &:hover
+      margin-left: 10px
+      transition: .2s all ease
+
 
 .signup-button
   +grid-media($desktop)
@@ -358,55 +371,3 @@ header
 //Page content
 .page-content
   position: relative
-
-.page-heading
-  @include relative-font-size(1.25)
-
-.post-list
-  margin-left: 0
-  list-style: none
-
-  > li
-    margin-bottom: $spacing-unit
-
-.post-meta
-  font-size: $small-font-size
-  color: $grey-color
-
-.post-link
-  display: block
-  @include relative-font-size(1.5)
-
-
-//Posts
-.post-header
-  margin-bottom: $spacing-unit
-
-.post-title
-  @include relative-font-size(2.625)
-  letter-spacing: -1px
-  line-height: 1
-
-  @include media-query($on-laptop)
-    @include relative-font-size(2.25)
-
-.post-content
-  margin-bottom: $spacing-unit
-
-  h2
-    @include relative-font-size(2)
-
-    @include media-query($on-laptop)
-      @include relative-font-size(1.75)
-
-  h3
-    @include relative-font-size(1.625)
-
-    @include media-query($on-laptop)
-      @include relative-font-size(1.375)
-
-  h4
-    @include relative-font-size(1.25)
-
-    @include media-query($on-laptop)
-      @include relative-font-size(1.125)

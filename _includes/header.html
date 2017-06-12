@@ -4,11 +4,11 @@
   </a>
 </div>
 <header class="site-header" role="banner" id="header">
-    
+
     {% assign default_paths = site.pages | map: "path" %}
     {% assign page_paths = site.header_pages | default: default_paths %}
     <a class="site-title" href="{{ "/" | relative_url }}">
-      <img src="./img/dmf-logo-nav.svg"/>
+      <!-- <img src="./img/dmf-logo-nav.svg"/> -->
     </a>
 
     {% if page_paths %}
@@ -33,11 +33,11 @@
             </a>
             {% endif %}
           {% endfor %}
-          
+
             <a id="nav__apply" style="color: white ;" target="_blank" class="btn btn__nav-apply" href="https://iyrs.typeform.com/to/vNhdlS">
               Apply
             </a>
-          
+
           <div class="line"></div>
         </div>
       </nav>
