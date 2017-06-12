@@ -1,19 +1,33 @@
 @charset "utf-8";
 
+/**
+ * @license
+ * MyFonts Webfont Build ID 3405501, 2017-06-12T12:15:50-0400
+ *
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are
+ * explicitly restricted from using the Licensed Webfonts(s).
+ *
+ * You may obtain a valid license at the URLs below.
+ *
+ * Webfont: NeuzeitGro-Reg by URW++
+ * URL: https://www.myfonts.com/fonts/urw/neuzeit-grotesk/t-regular/
+ *
+ * Webfont: NeuzeitGro-Bol by URW++
+ * URL: https://www.myfonts.com/fonts/urw/neuzeit-grotesk/t-bold/
+ *
+ *
+ * License: https://www.myfonts.com/viewlicense?type=web&buildid=3405501
+ * Licensed pageviews: 20,000
+ * Webfonts copyright: (URW)++,Copyright 2014 by (URW)++ Design &amp; Development
+ *
+ * © 2017 MyFonts Inc
+*/
+
+
+@import url("//hello.myfonts.net/count/33f6bd");
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,500i,700');
 
-// Define defaults for each variable.
-
-$ease-out-quint: cubic-bezier(0.23, 1, 0.32, 1);
-
-
-$base-font-family: "Roboto Mono", Helvetica, Arial, sans-serif !default;
-$base-font-size:   16px !default;
-$base-font-weight: 400 !default;
-$small-font-size:  $base-font-size * 0.875 !default;
-$base-line-height: 1.5 !default;
-
-$spacing-unit:     30px !default;
 
 // Colors
 $brand-color: blue;
@@ -36,15 +50,22 @@ $cyan: #84E3DD;
 
 $hero-bg-gradient: linear-gradient(-134deg, #EBF0F0 0%, #C0C8DA 100%);
 
-// Width of the content area
-$content-width:    800px !default;
-
-$on-palm:          768px !default;
-$on-laptop:        800px !default;
 
 //Typography
+@font-face {font-family: 'NeuzeitGrotesk';font-weight: normal;font-style: normal;src: url('webfonts/33F6BD_0_0.eot');src: url('webfonts/33F6BD_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/33F6BD_0_0.woff2') format('woff2'),url('webfonts/33F6BD_0_0.woff') format('woff'),url('webfonts/33F6BD_0_0.ttf') format('truetype'),url('webfonts/33F6BD_0_0.svg#wf') format('svg');}
+@font-face {font-family: 'NeuzeitGrotesk';font-weight: bold;font-style: normal;src: url('webfonts/33F6BD_1_0.eot');src: url('webfonts/33F6BD_1_0.eot?#iefix') format('embedded-opentype'),url('webfonts/33F6BD_1_0.woff2') format('woff2'),url('webfonts/33F6BD_1_0.woff') format('woff'),url('webfonts/33F6BD_1_0.ttf') format('truetype'),url('webfonts/33F6BD_1_0.svg#wf') format('svg');}
+
+
+$base-font-family: "Roboto Mono", Helvetica, Arial, sans-serif !default;
+$base-font-size:   16px !default;
+$base-font-weight: 400 !default;
+$small-font-size:  $base-font-size * 0.875 !default;
+$base-line-height: 1.5 !default;
+
+$spacing-unit:     30px !default;
+
 $h1-size: 64px;
-$h1-family: "neuzeit-grotesk", Helvetica, Arial, sans-serif;
+$h1-family: "NeuzeitGrotesk", Helvetica, Arial, sans-serif;
 $h1-weight: 400;
 
 $h2-size: 48px;
@@ -61,8 +82,12 @@ $regular: 400;
 $medium: 500;
 $bold: 700;
 
-$neuziet: "neuzeit-grotesk", Helvetica, Arial, sans-serif;
+$neuziet: "NeuzeitGrotesk", Helvetica, Arial, sans-serif;
 $roboto-mono: "Roboto Mono", Helvetica, Arial, sans-serif;
+
+// Animation
+$ease-out-quint: cubic-bezier(0.23, 1, 0.32, 1);
+
 
 .sub-header-1{
   font-family: $neuziet;

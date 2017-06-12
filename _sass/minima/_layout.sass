@@ -1,6 +1,3 @@
-
-
-
 // Main styles for the grid system
 .grid-container
   @include grid-container
@@ -15,7 +12,7 @@
   display: -webkit-box
   display: -ms-flexbox
   display: flex
-  display: -webkit-flex 
+  display: -webkit-flex
   display: -moz-box
   display: -ms-flexbox
   -webkit-box-orient: vertical
@@ -108,9 +105,6 @@ a.btn:hover
   a:hover
     color: darken($orange, 10%)
 
-.curriculum__catalog
-  margin-top: 30px
-
 // Site header
 .site-header
   min-height: 54px
@@ -122,11 +116,20 @@ a.btn:hover
 .site-title
   @include relative-font-size(1.625)
   font-weight: 300
-  line-height: $base-line-height * $base-font-size * 2.25
+  line-height: 3px
   letter-spacing: -1px
   margin-bottom: 0
   float: left
-
+  background: url('../img/dmf-logo-nav.svg')
+  height: 27px
+  width: 103px
+  background-size: cover
+  //
+  // &:hover
+  //   background: url('../img/dmf-logo.gif')
+  //   height: 27px
+  //   width: 103px
+  //   background-size: cover
   &,
   &:visited
     color: $grey-color-dark
@@ -152,6 +155,8 @@ header
     bottom: 0
     background-color: #ff5555
     transform-origin: left
+    -webkit-transform: translateX(-100%)
+    -ms-transform: translateX(-100%)
     transform: translateX(-100%)
     transition: transform 0.8s $ease-out-quint
     will-change: transform
@@ -170,13 +175,11 @@ header
     // Gaps between nav items, but not on the last one
     &:not(:last-child)
       margin-right: 20px
-
     &:hover
       text-decoration: none
       transition: color .2s ease-in-out
       color: red
-
-  @include media-query($on-palm)
+  +media-query(810px)
     position: absolute
     top: 9px
     right: $spacing-unit / 2
@@ -184,7 +187,6 @@ header
     border: 1px solid $grey-color-light
     border-radius: 5px
     text-align: right
-    width: 50%
 
     label[for="nav__trigger"]
       display: block
@@ -235,9 +237,17 @@ header
 
 .IYRS-link
   font-size: 15px
+  background-color: $light-gray
+  max-width: 100%
+  margin-left: 0px
+  float: none
+  padding-left: none
+  font-size: inherit
+  height: auto
+  text-align: center
+  height: 60px
   +grid-media($desktop)
     max-width: 100%
-    background-color: $light-gray
     margin-left: 0px
     float: none
     padding-left: none
@@ -247,6 +257,7 @@ header
     background-color: #ebf0f7
 
 .IYRS-link__text
+  padding-top: 5px
   +grid-media($desktop)
     text-align: center
     padding: 7px 0px
@@ -287,7 +298,6 @@ header
 
 .footer__nav
   font-size: 13px
-  +grid-shift(.15)
   ul
     list-style: none
   ul li
@@ -296,16 +306,16 @@ header
     margin-right: 15px
   +grid-media($desktop)
     font-size: 16px
-    +grid-shift(-.25)
     margin-top: 10px
     ul
       list-style: none
-    ul li
-      +grid-column(2)
       +grid-push(1)
+    ul li
+      +grid-column(3)
       margin-right: 0px
 
 .footer__iyrs-logo
+  display: block
   margin-left: 115px
   margin-top: 25px
   +grid-media($desktop)
@@ -331,10 +341,16 @@ header
     +grid-push(1.5)
 
 .signup-arrow
+  cursor: pointer
   width: 40px
   +grid-media($desktop)
     width: 20px
     height: 10px
+    transition: .2s all ease
+    &:hover
+      margin-left: 10px
+      transition: .2s all ease
+
 
 .signup-button
   +grid-media($desktop)
@@ -357,55 +373,3 @@ header
 //Page content
 .page-content
   position: relative
-
-.page-heading
-  @include relative-font-size(1.25)
-
-.post-list
-  margin-left: 0
-  list-style: none
-
-  > li
-    margin-bottom: $spacing-unit
-
-.post-meta
-  font-size: $small-font-size
-  color: $grey-color
-
-.post-link
-  display: block
-  @include relative-font-size(1.5)
-
-
-//Posts
-.post-header
-  margin-bottom: $spacing-unit
-
-.post-title
-  @include relative-font-size(2.625)
-  letter-spacing: -1px
-  line-height: 1
-
-  @include media-query($on-laptop)
-    @include relative-font-size(2.25)
-
-.post-content
-  margin-bottom: $spacing-unit
-
-  h2
-    @include relative-font-size(2)
-
-    @include media-query($on-laptop)
-      @include relative-font-size(1.75)
-
-  h3
-    @include relative-font-size(1.625)
-
-    @include media-query($on-laptop)
-      @include relative-font-size(1.375)
-
-  h4
-    @include relative-font-size(1.25)
-
-    @include media-query($on-laptop)
-      @include relative-font-size(1.125)
