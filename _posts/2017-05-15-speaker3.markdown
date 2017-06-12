@@ -9,4 +9,4 @@ speaker-img: ../img/nathalie_miebach@2x.jpg
 speaker-img_home: ./img/nathalie_miebach@2x.jpg
 event-link: http://iyrs.edu/event/nathalie-miebach-tradition-contemporary-design/
 ---
-Nathalie Miebach explores the intersection of art and science by translating scientific data related to meteorology, ecology and oceanography into woven sculptures and musical scores and installations. Using both digital technologies and traditional crafts, Miebach examines how these two approaches can be used to eek out a more nuanced expression and understanding of information.
+Traditional tools, methods and technology are utilized as resources in contemporary design. Miebach will discuss how tradition and technology mix into a questioning and conceptual partnership within her sculptural work. And, her belief in the importance of combining the long-established, hand-build techniques with today’s computer-enhanced data collection and music generation.
