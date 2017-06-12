@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Tradition in Contemporary Design
-speech-title: Nathalie Miebach
+title: Nathalie Miebach
+speech-title: Weaving Science Data into Sound and Touch
 date:   2017-05-15 14:14:19 -0400
 speech-date: August 5, 2017
 categories: speakers
 speaker-img: ../img/nathalie_miebach@2x.jpg
 speaker-img_home: ./img/nathalie_miebach@2x.jpg
 ---
-A wide range of contemporary materials and technologies are available to today’s designers. Marlow will discuss his use of digital technologies and custom software to design with a particular focus on pushing the boundaries of materials. He will also explore why he chooses one material over another, based on what the materials means for him, conceptually, physicality, and structurally.
+Nathalie Miebach explores the intersection of art and science by translating scientific data related to meteorology, ecology and oceanography into woven sculptures and musical scores and installations. Using both digital technologies and traditional crafts, Miebach examines how these two approaches can be used to eek out a more nuanced expression and understanding of information.

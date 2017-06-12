@@ -15,7 +15,7 @@
   display: -webkit-box
   display: -ms-flexbox
   display: flex
-  display: -webkit-flex 
+  display: -webkit-flex
   display: -moz-box
   display: -ms-flexbox
   -webkit-box-orient: vertical
@@ -108,9 +108,6 @@ a.btn:hover
   a:hover
     color: darken($orange, 10%)
 
-.curriculum__catalog
-  margin-top: 30px
-
 // Site header
 .site-header
   min-height: 54px
@@ -170,13 +167,11 @@ header
     // Gaps between nav items, but not on the last one
     &:not(:last-child)
       margin-right: 20px
-
     &:hover
       text-decoration: none
       transition: color .2s ease-in-out
       color: red
-
-  @include media-query($on-palm)
+  +media-query(810px)
     position: absolute
     top: 9px
     right: $spacing-unit / 2
@@ -184,7 +179,6 @@ header
     border: 1px solid $grey-color-light
     border-radius: 5px
     text-align: right
-    width: 50%
 
     label[for="nav__trigger"]
       display: block
@@ -235,9 +229,16 @@ header
 
 .IYRS-link
   font-size: 15px
+  background-color: $light-gray
+  max-width: 100%
+  margin-left: 0px
+  float: none
+  padding-left: none
+  font-size: inherit
+  height: auto
+  text-align: center
   +grid-media($desktop)
     max-width: 100%
-    background-color: $light-gray
     margin-left: 0px
     float: none
     padding-left: none
@@ -287,7 +288,6 @@ header
 
 .footer__nav
   font-size: 13px
-  +grid-shift(.15)
   ul
     list-style: none
   ul li
@@ -296,13 +296,12 @@ header
     margin-right: 15px
   +grid-media($desktop)
     font-size: 16px
-    +grid-shift(-.25)
     margin-top: 10px
     ul
       list-style: none
-    ul li
-      +grid-column(2)
       +grid-push(1)
+    ul li
+      +grid-column(3)
       margin-right: 0px
 
 .footer__iyrs-logo
