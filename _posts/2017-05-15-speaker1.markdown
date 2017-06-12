@@ -5,8 +5,8 @@ speech-title: Digital Enabled Creativity
 date:   2017-05-15 14:14:19 -0400
 speech-date: July 22, 2017
 categories: speakers
-speaker-img: {{ site.baseurl }}/img/philippa_mothersill@2x.jpg
-speaker-img_home: {{ site.baseurl }}/img/philippa_mothersill@2x.jpg
+speaker-img: ../img/philippa_mothersill@2x.jpg
+speaker-img_home: ./img/philippa_mothersill@2x.jpg
 event-link: http://iyrs.edu/event/philippa-mothersill-digital-enabled-creativity/
 ---
 

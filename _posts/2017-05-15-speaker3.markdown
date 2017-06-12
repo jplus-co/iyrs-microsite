@@ -5,7 +5,7 @@ speech-title: Nathalie Miebach
 date:   2017-05-15 14:14:19 -0400
 speech-date: August 5, 2017
 categories: speakers
-speaker-img: {{ site.baseurl }}/img/nathalie_miebach@2x.jpg
-speaker-img_home: {{ site.baseurl }}/img/nathalie_miebach@2x.jpg
+speaker-img: ../img/nathalie_miebach@2x.jpg
+speaker-img_home: ./img/nathalie_miebach@2x.jpg
 ---
 A wide range of contemporary materials and technologies are available to today’s designers. Marlow will discuss his use of digital technologies and custom software to design with a particular focus on pushing the boundaries of materials. He will also explore why he chooses one material over another, based on what the materials means for him, conceptually, physicality, and structurally.
