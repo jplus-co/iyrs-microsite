@@ -7,7 +7,7 @@ subtitle: With state of the art machines, build anything possible at the DM&F Bu
 ---
 <div class="grid-container">
 	<div class="square-feet-section flex">
-		<img class="dot-bg" src="../img/dot-bg.png" />
+		<img class="dot-bg" src="{{ site.baseurl }}/img/dot-bg.png" />
 
 	<p class="build-space-opening-date">
 		The build space is opening September 2017
@@ -47,7 +47,7 @@ Get your hands on the latest tools and technology to fabricate your designs. The
 <div class="machine-options-section">
 <div class="grid-container">
 		<div class="laser-cutter">
-			<img class="" src="../img/laser-cutter-icon.svg" />
+			<img class="" src="{{ site.baseurl }}/img/laser-cutter-icon.svg" />
 			<h4 class="machine__title">Laser cutters</h4>
 		</div>
 

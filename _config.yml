@@ -16,8 +16,8 @@
 title: Digital Modeling & Fabrication Program at IYRS
 email: your-email@domain.com
 description: Digital Modeling and Fabrication program at IYRS. Located in Newport, Rhode Island. Make anything Possible.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/iyrs-microsite" # the subpath of your site, e.g. /blog
+url: "http://127.0.0.1:4000" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 
