@@ -9,4 +9,4 @@ speaker-img: ../img/hart_marlow@2x.jpg
 speaker-img_home: ./img/hart_marlow@2x.jpg
 event-link: http://iyrs.edu/event/hart-marlow-digital-design-materials-processes/
 ---
-Traditional tools, methods and technology are utilized as resources in contemporary design. Miebach will discuss how tradition and technology mix into a questioning and conceptual partnership within her sculptural work. And, her belief in the importance of combining the long-established, hand-build techniques with today’s computer-enhanced data collection and music generation.
+A wide range of contemporary materials and technologies are available to today’s designers. Marlow will discuss his use of digital technologies and custom software to design with a particular focus on pushing the boundaries of materials. He will also explore why he chooses one material over another, based on what the materials means for him, conceptually, physicality, and structurally.

@@ -288,6 +288,8 @@ header
 
 .footer__header
   +grid-column(12)
+  +font-face($roboto-mono, $bold, 16px)
+  margin-bottom: 20px
   text-align: center
   +grid-media($desktop)
     +grid-column(12)
@@ -302,6 +304,7 @@ header
 
 .footer__nav
   font-size: 13px
+  margin-top: 30px
   ul
     list-style: none
   ul li
@@ -310,7 +313,7 @@ header
     margin-right: 15px
   +grid-media($desktop)
     font-size: 16px
-    margin-top: 10px
+    margin-top: 50px
     ul
       list-style: none
       +grid-push(1)
@@ -326,17 +329,18 @@ header
     width: 75px
     height: 25px
     +grid-push(5.5)
-    margin-top: 15px
+    margin-top: 30px
     background-color: #E8EEEE
 
 .email-input
+  +font-face($roboto-mono, $regular, 14px)
   width: 200px
   margin-left: 50px
   margin-top: 15px
   +grid-media($desktop)
     background-color: #E8EEEE
     border: 0px solid black
-    border-bottom: 1px solid black
+    border-bottom: 2px solid black
     width: 80%
     height: 25px
     margin-left: 50px
