@@ -3,7 +3,7 @@ layout: post
 title:  Chad Phillips
 speech-title: Entrepreneurialism for Design
 date:   2017-05-15 14:14:19 -0400
-speech-date: June 24, 2017
+speech-date: July 15, 2017
 categories: speakers
 speaker-img: ../img/chad_phillips@2x.jpg
 speaker-img_home: ./img/chad_phillips@2x.jpg
