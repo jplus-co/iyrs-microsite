@@ -95,7 +95,7 @@ Get your hands on the latest tools and technology to fabricate your designs. The
 	</ul>
 
 	<ul class="electronics-list">
-		<h1 class="electronics-list__title sub-header-1">Software</h1>
+		<h1 class="electronics-list__title sub-header-1">Hardware</h1>
 		<li>Arduino Kits</li>
 		<li>Desktop Computers</li>
 		<li>Laptop Computers</li>
