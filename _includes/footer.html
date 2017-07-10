@@ -3,8 +3,6 @@
 
 <footer class="site-footer">
   <div class="grid-container">
-    <div class="footer__form"></div>
-    <div class="footer__nav">
     <div class="footer__header">Curious about DM&F? Join our mailing list.</div>
     <div class="footer__form">
 			<div class="ctct-embed-signup"
@@ -20,8 +18,8 @@
            <input data-id="required:input" type="hidden" name="required" value="list,email">
            <input data-id="url:input" type="hidden" name="url" value="">
 					 <div class="grid-container">
-						<p data-id="Email Address:p" ><label data-id="Email Address:label" data-name="email" class="ctct-form-required"></label>
-							<input data-id="Email Address:input" type="text" name="email" placeholder="yourEmail@email.com" maxlength="80" class="email-input">
+						<p data-id="Email Address:p"><label data-id="Email Address:label" data-name="email" class="ctct-form-required"></label>
+							<input data-id="Email Address:input" type="text" name="email" placeholder="YourEmail@email.com" maxlength="80" class="email-input">
 							<button type="submit" class="Button signup-button Button--block Button-secondary" data-enabled="enabled">
 								<img class="signup-arrow" src="{{ site.baseurl }}/img/signup-arrow.png"/>
 							</button>
@@ -40,13 +38,11 @@
    </div>
 </div>
 		</div>
-    <div class="footer__nav grid-container">
-      <ul>
-        <li><a class="footer__nav-item-color" href="{{ site.baseurl }}/studio">Build Studio</a></li>
-        <li class="footer__mobile-CTA-space"><a class="footer__nav-item-color" href="{{ site.baseurl }}/careers">Careers</a></li>
-        <li class="footer__mobile-CTA-space"><a class="footer__nav-item-color" href="{{ site.baseurl }}/program">Program Info</a></li>
-        <li class="footer__mobile-CTA-space"><a class="footer__nav-item-color" href="{{ site.baseurl }}/summer-speakers">Summer Speakers</a></li>
-      </ul>
+    <div class="footer__nav">
+        <div><a href="{{ site.baseurl }}/studio">Build Studio</a></div>
+        <div><a href="{{ site.baseurl }}/careers">Careers</a></div>
+        <div><a href="{{ site.baseurl }}/program">Program Info</a></div>
+        <div><a href="{{ site.baseurl }}/summer-speakers">Summer Speakers</a></div>
     </div>
     <a class="footer__iyrs-logo" href="http://iyrs.edu">
 			<img src="{{ site.baseurl }}/img/IYRS-logo.jpg">

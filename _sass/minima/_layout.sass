@@ -294,36 +294,36 @@ header
   +grid-media($desktop)
     +grid-column(12)
 
-.footer__nav-item-color
-  color: black
-
-.footer__mobile-CTA-space
-  padding-left: 20px
-  +grid-media($desktop)
-    padding-left: 0px
-
 .footer__nav
+  display: -webkit-flex
+  display: flex
+  -webkit-flex-flow: column
+  flex-flow: column
+  -webkit-justify-content: space-around
+  justify-content: space-around
+  align-items: center
   font-size: 13px
   margin-top: 30px
-  ul
-    list-style: none
-  ul li
-    +grid-push(2)
-    +grid-column(2)
-    margin-right: 15px
+
+  div
+    padding-bottom: 20px
+
   +grid-media($desktop)
     font-size: 16px
     margin-top: 50px
-    ul
-      list-style: none
-      +grid-push(1)
-    ul li
-      +grid-column(3)
-      margin-right: 0px
+    min-width: 700px
+    -webkit-flex-flow: row wrap
+    flex-flow: row wrap
+    -webkit-justify-content: space-around
+    justify-content: space-around
 
 .footer__iyrs-logo
-  display: block
-  margin-left: 115px
+  display: -webkit-flex
+  display: flex
+  -webkit-align-items: center
+  align-items: center
+  -webkit-justify-content: center
+  justify-content: center
   margin-top: 25px
   +grid-media($desktop)
     width: 75px
@@ -331,6 +331,10 @@ header
     +grid-push(5.5)
     margin-top: 30px
     background-color: #E8EEEE
+  img
+    max-width: 30%
+    +grid-media($desktop)
+      max-width: 100%
 
 .email-input
   +font-face($roboto-mono, $regular, 14px)
@@ -338,7 +342,7 @@ header
   margin-left: 50px
   margin-top: 15px
   +grid-media($desktop)
-    background-color: #E8EEEE
+    background-color: $light-gray
     border: 0px solid black
     border-bottom: 2px solid black
     width: 80%
@@ -358,7 +362,6 @@ header
     &:hover
       margin-left: 10px
       transition: .2s all ease
-
 
 .signup-button
   +reset-button()

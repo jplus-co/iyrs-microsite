@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Hart marlow
+title:  Hart Marlow
 speech-title: "Digital: Design, Materials & Processes"
 date:   2017-05-15 14:14:19 -0400
 speech-date: July 29, 2017
